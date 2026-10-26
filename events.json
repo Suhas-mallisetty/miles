@@ -2,14 +2,37 @@
   "meta": {
     "window": "2026-12-03 to 2026-12-30",
     "booked": "Fred again.. Mumbai, 2026-12-08 & 2026-12-09",
-    "last_run": "2026-10-23",
-    "runs": ["2026-10-23"]
+    "last_run": "2026-10-26",
+    "runs": [
+      "2026-10-23",
+      "2026-10-26"
+    ]
   },
   "events": [
     {
+      "id": "andme-pacha-dubai-2026",
+      "name": "Pacha ICONS: &ME (near-India)",
+      "artists": [
+        "&ME (Keinemusik)"
+      ],
+      "date": "2026-12-05",
+      "city": "Dubai",
+      "venue": "Playa Pacha, FIVE LUXE JBR",
+      "genre": "Afro / deep house",
+      "ticket_link": "https://www.pachaicons.com/dubai/events",
+      "price": "AED 200–1,500",
+      "source_url": "https://www.visitdubai.com/en/festivals-and-events/dubai-events-calendar/pacha-icons-andme",
+      "date_found": "2026-10-26",
+      "status": "on sale",
+      "score": 3,
+      "score_reason": "Keinemusik's &ME at a beach club, a strong Afro-house booking, but it's a flight for a single night 3 days before Fred."
+    },
+    {
       "id": "fred-again-mumbai-2026",
       "name": "Fred again.. India Tour – Mumbai",
-      "artists": ["Fred again.."],
+      "artists": [
+        "Fred again.."
+      ],
       "date": "2026-12-08 / 2026-12-09",
       "city": "Mumbai",
       "venue": "Mahalaxmi Race Course",
@@ -24,12 +47,144 @@
       "score_reason": "Already booked."
     },
     {
-      "id": "francis-mercier-bengaluru-2026",
-      "name": "Francis Mercier India Tour – Bengaluru",
-      "artists": ["Francis Mercier"],
-      "date": "2026-12-23",
+      "id": "hugel-hyderabad-2026",
+      "name": "HUGEL India Tour – Hyderabad",
+      "artists": [
+        "HUGEL"
+      ],
+      "date": "2026-12-18",
+      "city": "Hyderabad",
+      "venue": "TBA",
+      "genre": "Afro/Latin tech house",
+      "ticket_link": null,
+      "price": null,
+      "source_url": "https://happeningsaroundme.in/event/delhi-hugel-india-tour-2026-delhi",
+      "date_found": "2026-10-26",
+      "status": "unconfirmed",
+      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
+      "score": 3,
+      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed."
+    },
+    {
+      "id": "sunburn-festival-2026",
+      "name": "Sunburn Festival 2026",
+      "artists": [
+        "The Chainsmokers",
+        "Jason Derulo",
+        "DJ Snake",
+        "Sebastian Ingrosso",
+        "ACRAZE",
+        "Sofi Tukker",
+        "Laidback Luke",
+        "NERVO",
+        "Nucleya",
+        "Ookay",
+        "Emma Heesters"
+      ],
+      "date": "2026-12-18 / 2026-12-19",
+      "city": "Mumbai",
+      "venue": "Mahalaxmi Racecourse",
+      "genre": "big-room EDM / commercial",
+      "ticket_link": "https://in.bookmyshow.com",
+      "price": "from ₹3,500",
+      "source_url": "https://www.esquireindia.co.in/culture/books-and-music/sunburn-festival-2026-mumbai-dates-venue-tickets-lineup-and-everything-you-need-to-know",
+      "date_found": "2026-10-23",
+      "status": "on sale",
+      "score": 1,
+      "score_reason": "Mostly big-room and pop acts; only Sofi Tukker and ACRAZE lean house. Not your crowd."
+    },
+    {
+      "id": "edc-thailand-2026",
+      "name": "EDC Thailand 2026 (near-India)",
+      "artists": [
+        "Mau P",
+        "Vintage Culture",
+        "Dom Dolla",
+        "CamelPhat",
+        "Jamie Jones",
+        "Green Velvet b2b Steve Angello",
+        "James Hype",
+        "Charlotte de Witte"
+      ],
+      "date": "2026-12-18 to 2026-12-20",
+      "city": "Phuket, Thailand",
+      "venue": "Rhythm Park, Laguna Phuket",
+      "genre": "multi-genre festival (neonGARDEN = house/techno)",
+      "ticket_link": "https://thailand.edc.com/en/lineup/",
+      "price": null,
+      "source_url": "https://www.ticketfairy.com/word/2026/06/10/edc-thailand-2026-line-up-james-hype-mau-p-and-more/",
+      "date_found": "2026-10-23",
+      "status": "on sale",
+      "notes": "Dom Dolla is listed on Fri Dec 18 by one third-party site only (lineupscout); per-day schedule unconfirmed. Fisher is not on the December lineup (he played the January edition).",
+      "score": 4,
+      "score_reason": "Three of your artists on one weekend (Mau P, Vintage Culture, Dom Dolla), plus Jamie Jones. Some of the festival is big-room, but you can skip those stages."
+    },
+    {
+      "id": "hugel-bengaluru-2026",
+      "name": "HUGEL India Tour – Bengaluru",
+      "artists": [
+        "HUGEL"
+      ],
+      "date": "2026-12-19",
       "city": "Bengaluru",
       "venue": "TBA",
+      "genre": "Afro/Latin tech house",
+      "ticket_link": null,
+      "price": null,
+      "source_url": "https://happeningsaroundme.in/event/bangalore-hugel-india-tour-2026-bengaluru",
+      "date_found": "2026-10-26",
+      "status": "unconfirmed",
+      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
+      "score": 3,
+      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed."
+    },
+    {
+      "id": "sunburn-closing-2026",
+      "name": "Sunburn Festival 2026 – Closing Party",
+      "artists": [
+        "TBA"
+      ],
+      "date": "2026-12-20",
+      "city": "Mumbai",
+      "venue": "Dome, NSCI SVP Stadium",
+      "genre": "TBA",
+      "ticket_link": "https://in.bookmyshow.com",
+      "price": null,
+      "source_url": "https://www.ticketfairy.com/word/2026/06/02/sunburn-continues-mumbai-era-with-mahalaxmi-racecourse-as-new-venue",
+      "date_found": "2026-10-23",
+      "status": "announced",
+      "score": 2,
+      "score_reason": "Lineup not announced, and Sunburn's 2026 bookings lean big-room. Recheck once artists are named.",
+      "notes": "Still no lineup as of 2026-10-26. One outlier source (Musicplus) says MMRA Grounds instead of NSCI Dome."
+    },
+    {
+      "id": "hugel-mumbai-2026",
+      "name": "HUGEL India Tour – Mumbai",
+      "artists": [
+        "HUGEL"
+      ],
+      "date": "2026-12-20",
+      "city": "Mumbai",
+      "venue": "TBA",
+      "genre": "Afro/Latin tech house",
+      "ticket_link": null,
+      "price": null,
+      "source_url": "https://happeningsaroundme.in/event/delhi-hugel-india-tour-2026-delhi",
+      "date_found": "2026-10-26",
+      "status": "unconfirmed",
+      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
+      "score": 4,
+      "score_reason": "Groovy Afro/Latin tech house in your home city. Confirm before planning around it."
+    },
+    {
+      "id": "francis-mercier-bengaluru-2026",
+      "name": "Francis Mercier India Tour – Bengaluru",
+      "artists": [
+        "Francis Mercier"
+      ],
+      "date": "2026-12-23",
+      "city": "Bengaluru",
+      "venue": "Cavore (per Bandsintown – unconfirmed)",
       "genre": "Afro house / organic house",
       "ticket_link": "https://in.bookmyshow.com",
       "price": null,
@@ -37,12 +192,18 @@
       "date_found": "2026-10-23",
       "status": "on sale",
       "score": 4,
-      "score_reason": "Top-tier Afro/vocal house, squarely in taste; needs a flight from Mumbai."
+      "score_reason": "Top-tier Afro/vocal house, squarely in taste; needs a flight from Mumbai.",
+      "venue_source_url": "https://www.bandsintown.com/a/1365295-francis-mercier",
+      "changes": [
+        "2026-10-26: venue TBA -> Cavore (per Bandsintown – unconfirmed)"
+      ]
     },
     {
       "id": "francis-mercier-mumbai-2026",
       "name": "Francis Mercier presents Solèy – Mumbai",
-      "artists": ["Francis Mercier"],
+      "artists": [
+        "Francis Mercier"
+      ],
       "date": "2026-12-24",
       "city": "Mumbai",
       "venue": "Fairmont Mumbai (unconfirmed – Bandsintown only)",
@@ -59,10 +220,12 @@
     {
       "id": "francis-mercier-delhi-2026",
       "name": "Francis Mercier presents Solèy – Delhi NCR",
-      "artists": ["Francis Mercier"],
+      "artists": [
+        "Francis Mercier"
+      ],
       "date": "2026-12-25",
       "city": "Delhi NCR",
-      "venue": "TBA",
+      "venue": "A DOT by GNH, Gurugram (per Bandsintown – unconfirmed)",
       "genre": "Afro house / organic house",
       "ticket_link": "https://in.bookmyshow.com",
       "price": null,
@@ -70,15 +233,40 @@
       "date_found": "2026-10-23",
       "status": "on sale",
       "score": 3,
-      "score_reason": "Same Solèy show as Mumbai, so only worth it if you miss Dec 24."
+      "score_reason": "Same Solèy show as Mumbai, so only worth it if you miss Dec 24.",
+      "venue_source_url": "https://www.bandsintown.com/a/1365295-francis-mercier",
+      "changes": [
+        "2026-10-26: venue TBA -> A DOT by GNH, Gurugram (per Bandsintown – unconfirmed)"
+      ]
+    },
+    {
+      "id": "hugel-kolkata-2026",
+      "name": "HUGEL India Tour – Kolkata",
+      "artists": [
+        "HUGEL"
+      ],
+      "date": "2026-12-25",
+      "city": "Kolkata",
+      "venue": "TBA",
+      "genre": "Afro/Latin tech house",
+      "ticket_link": null,
+      "price": null,
+      "source_url": "https://happeningsaroundme.in/event/delhi-hugel-india-tour-2026-delhi",
+      "date_found": "2026-10-26",
+      "status": "unconfirmed",
+      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
+      "score": 3,
+      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed."
     },
     {
       "id": "francis-mercier-hyderabad-2026",
       "name": "Francis Mercier India Tour – Hyderabad",
-      "artists": ["Francis Mercier"],
+      "artists": [
+        "Francis Mercier"
+      ],
       "date": "2026-12-26",
       "city": "Hyderabad",
-      "venue": "TBA",
+      "venue": "Quake Arena (per Bandsintown – unconfirmed)",
       "genre": "Afro house / organic house",
       "ticket_link": "https://in.bookmyshow.com",
       "price": null,
@@ -86,15 +274,40 @@
       "date_found": "2026-10-23",
       "status": "on sale",
       "score": 3,
-      "score_reason": "Same artist as the Mumbai date; lowest priority of the five cities."
+      "score_reason": "Same artist as the Mumbai date; lowest priority of the five cities.",
+      "venue_source_url": "https://www.bandsintown.com/a/1365295-francis-mercier",
+      "changes": [
+        "2026-10-26: venue TBA -> Quake Arena (per Bandsintown – unconfirmed)"
+      ]
+    },
+    {
+      "id": "hugel-delhi-ncr-2026",
+      "name": "HUGEL India Tour – Delhi NCR",
+      "artists": [
+        "HUGEL"
+      ],
+      "date": "2026-12-26",
+      "city": "Delhi NCR",
+      "venue": "TBA",
+      "genre": "Afro/Latin tech house",
+      "ticket_link": null,
+      "price": null,
+      "source_url": "https://happeningsaroundme.in/event/delhi-hugel-india-tour-2026-delhi",
+      "date_found": "2026-10-26",
+      "status": "unconfirmed",
+      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
+      "score": 3,
+      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed."
     },
     {
       "id": "francis-mercier-goa-2026",
       "name": "Francis Mercier India Tour – Goa",
-      "artists": ["Francis Mercier"],
+      "artists": [
+        "Francis Mercier"
+      ],
       "date": "2026-12-27",
       "city": "Goa",
-      "venue": "TBA",
+      "venue": "RROV, Vagator (per Bandsintown – unconfirmed)",
       "genre": "Afro house / organic house",
       "ticket_link": "https://in.bookmyshow.com",
       "price": null,
@@ -102,56 +315,30 @@
       "date_found": "2026-10-23",
       "status": "on sale",
       "score": 4,
-      "score_reason": "Same artist, but an open-air Goa setting suits Afro house; makes a good Christmas-week trip."
+      "score_reason": "Same artist, but an open-air Goa setting suits Afro house; makes a good Christmas-week trip.",
+      "venue_source_url": "https://www.bandsintown.com/a/1365295-francis-mercier",
+      "changes": [
+        "2026-10-26: venue TBA -> RROV, Vagator (per Bandsintown – unconfirmed)"
+      ]
     },
     {
-      "id": "sunburn-closing-2026",
-      "name": "Sunburn Festival 2026 – Closing Party",
-      "artists": ["TBA"],
-      "date": "2026-12-20",
-      "city": "Mumbai",
-      "venue": "Dome, NSCI SVP Stadium",
-      "genre": "TBA",
-      "ticket_link": "https://in.bookmyshow.com",
+      "id": "hugel-goa-2026",
+      "name": "HUGEL India Tour – Goa",
+      "artists": [
+        "HUGEL"
+      ],
+      "date": "2026-12-27",
+      "city": "Goa",
+      "venue": "TBA",
+      "genre": "Afro/Latin tech house",
+      "ticket_link": null,
       "price": null,
-      "source_url": "https://www.ticketfairy.com/word/2026/06/02/sunburn-continues-mumbai-era-with-mahalaxmi-racecourse-as-new-venue",
-      "date_found": "2026-10-23",
-      "status": "announced",
-      "score": 2,
-      "score_reason": "Lineup not announced, and Sunburn's 2026 bookings lean big-room. Recheck once artists are named."
-    },
-    {
-      "id": "sunburn-festival-2026",
-      "name": "Sunburn Festival 2026",
-      "artists": ["The Chainsmokers", "Jason Derulo", "DJ Snake", "Sebastian Ingrosso", "ACRAZE", "Sofi Tukker", "Laidback Luke", "NERVO", "Nucleya", "Ookay", "Emma Heesters"],
-      "date": "2026-12-18 / 2026-12-19",
-      "city": "Mumbai",
-      "venue": "Mahalaxmi Racecourse",
-      "genre": "big-room EDM / commercial",
-      "ticket_link": "https://in.bookmyshow.com",
-      "price": "from ₹3,500",
-      "source_url": "https://www.esquireindia.co.in/culture/books-and-music/sunburn-festival-2026-mumbai-dates-venue-tickets-lineup-and-everything-you-need-to-know",
-      "date_found": "2026-10-23",
-      "status": "on sale",
-      "score": 1,
-      "score_reason": "Mostly big-room and pop acts; only Sofi Tukker and ACRAZE lean house. Not your crowd."
-    },
-    {
-      "id": "edc-thailand-2026",
-      "name": "EDC Thailand 2026 (near-India)",
-      "artists": ["Mau P", "Vintage Culture", "Dom Dolla", "CamelPhat", "Jamie Jones", "Green Velvet b2b Steve Angello", "James Hype", "Charlotte de Witte"],
-      "date": "2026-12-18 to 2026-12-20",
-      "city": "Phuket, Thailand",
-      "venue": "Rhythm Park, Laguna Phuket",
-      "genre": "multi-genre festival (neonGARDEN = house/techno)",
-      "ticket_link": "https://thailand.edc.com/en/lineup/",
-      "price": null,
-      "source_url": "https://www.ticketfairy.com/word/2026/06/10/edc-thailand-2026-line-up-james-hype-mau-p-and-more/",
-      "date_found": "2026-10-23",
-      "status": "on sale",
-      "notes": "Dom Dolla is listed on Fri Dec 18 by one third-party site only (lineupscout); per-day schedule unconfirmed. Fisher is not on the December lineup (he played the January edition).",
+      "source_url": "https://happeningsaroundme.in/event/delhi-hugel-india-tour-2026-delhi",
+      "date_found": "2026-10-26",
+      "status": "unconfirmed",
+      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
       "score": 4,
-      "score_reason": "Three of your artists on one weekend (Mau P, Vintage Culture, Dom Dolla), plus Jamie Jones. Some of the festival is big-room, but you can skip those stages."
+      "score_reason": "Good fit, but it's the same night as Francis Mercier Goa, so you'd have to pick one."
     }
   ],
   "watchlist": [
@@ -186,7 +373,9 @@
     "Vintage Culture": "No India date; plays EDC Thailand",
     "Cloonee / Prospa / Max Styler": "No India or nearby dates found",
     "John Summit / Chris Stussy (now 'Chris Stassy') / Michael Bibi / Hugel / Sonny Fodera": "No India dates in the window",
-    "Mochakk / Keinemusik / Black Coffee": "Already toured India in 2026 (May / Mar 27 / Apr); no December dates",
-    "Venues (antiSOCIAL, Kitty Su, Bonobo, Echo Arena, Hilltop)": "No house bookings with names published yet. Hilltop Dec 27–29 and NYE are psytrance."
+    "Mochakk / Keinemusik / Black Coffee": "Already toured India in 2026; no December India dates (Keinemusik Dubai desert show is Nov 21)",
+    "Venues (antiSOCIAL, Kitty Su, Bonobo, Echo Arena, Hilltop)": "No house bookings with names published yet. Hilltop Dec 27–29 and NYE are psytrance.",
+    "John Summit": "US arena dates Dec 4–12; Australian festival Dec 28–31",
+    "Black Coffee (Dubai)": "Ushuaïa Dubai listings found are 2024/2025 editions; no 2026 date"
   }
 }
