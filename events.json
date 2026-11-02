@@ -2,10 +2,11 @@
   "meta": {
     "window": "2026-12-03 to 2026-12-30",
     "booked": "Fred again.. Mumbai, 2026-12-08 & 2026-12-09",
-    "last_run": "2026-10-26",
+    "last_run": "2026-11-02",
     "runs": [
       "2026-10-23",
-      "2026-10-26"
+      "2026-10-26",
+      "2026-11-02"
     ]
   },
   "events": [
@@ -48,7 +49,7 @@
     },
     {
       "id": "hugel-hyderabad-2026",
-      "name": "HUGEL India Tour – Hyderabad",
+      "name": "Circus India – Hyderabad (HUGEL)",
       "artists": [
         "HUGEL"
       ],
@@ -58,12 +59,15 @@
       "genre": "Afro/Latin tech house",
       "ticket_link": null,
       "price": null,
-      "source_url": "https://happeningsaroundme.in/event/delhi-hugel-india-tour-2026-delhi",
+      "source_url": "https://rollingstoneindia.com/hugel-india-tour-dates-tickets-cities-mochakk-boris-brejcha/",
       "date_found": "2026-10-26",
-      "status": "unconfirmed",
-      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
+      "status": "announced",
+      "notes": "Rolling Stone India says venue and full lineup will be announced next week. Mochakk is also expected.",
       "score": 3,
-      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed."
+      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed.",
+      "changes": [
+        "2026-11-02: unconfirmed -> announced (Circus Hyderabad)"
+      ]
     },
     {
       "id": "sunburn-festival-2026",
@@ -94,6 +98,31 @@
       "score_reason": "Mostly big-room and pop acts; only Sofi Tukker and ACRAZE lean house. Not your crowd."
     },
     {
+      "id": "hugel-bengaluru-2026",
+      "name": "Circus India – Bengaluru (HUGEL, Boris Brejcha, Dean Turnley…)",
+      "artists": [
+        "HUGEL",
+        "Boris Brejcha",
+        "Dean Turnley",
+        "Mochakk (date unclear)"
+      ],
+      "date": "2026-12-18 / 2026-12-19",
+      "city": "Bengaluru",
+      "venue": "Terraform Arena",
+      "genre": "tech house / melodic techno",
+      "ticket_link": null,
+      "price": null,
+      "source_url": "https://rollingstoneindia.com/hugel-india-tour-dates-tickets-cities-mochakk-boris-brejcha/",
+      "date_found": "2026-10-26",
+      "status": "announced",
+      "notes": "Rolling Stone India lists Circus Bengaluru on Dec 18 & 19 but doesn't say who plays which night. Mochakk is confirmed for Bengaluru, date unclear.",
+      "score": 3,
+      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed.",
+      "changes": [
+        "2026-11-02: unconfirmed -> announced (Rolling Stone India); now part of Circus India at Terraform Arena"
+      ]
+    },
+    {
       "id": "edc-thailand-2026",
       "name": "EDC Thailand 2026 (near-India)",
       "artists": [
@@ -104,7 +133,8 @@
         "Jamie Jones",
         "Green Velvet b2b Steve Angello",
         "James Hype",
-        "Charlotte de Witte"
+        "Charlotte de Witte",
+        "Max Styler"
       ],
       "date": "2026-12-18 to 2026-12-20",
       "city": "Phuket, Thailand",
@@ -115,66 +145,36 @@
       "source_url": "https://www.ticketfairy.com/word/2026/06/10/edc-thailand-2026-line-up-james-hype-mau-p-and-more/",
       "date_found": "2026-10-23",
       "status": "on sale",
-      "notes": "Dom Dolla is listed on Fri Dec 18 by one third-party site only (lineupscout); per-day schedule unconfirmed. Fisher is not on the December lineup (he played the January edition).",
+      "notes": "Dom Dolla is listed on Fri Dec 18 by one third-party site only (lineupscout); per-day schedule unconfirmed. Fisher is not on the December lineup (he played the January edition). Max Styler confirmed (EDM Identity/Ticketfairy). Some third-party sites claim Fisher b2b Chris Lake and Cloonee, but those look like mix-ups with other editions or festivals, so they're not counted.",
       "score": 4,
-      "score_reason": "Three of your artists on one weekend (Mau P, Vintage Culture, Dom Dolla), plus Jamie Jones. Some of the festival is big-room, but you can skip those stages."
-    },
-    {
-      "id": "hugel-bengaluru-2026",
-      "name": "HUGEL India Tour – Bengaluru",
-      "artists": [
-        "HUGEL"
-      ],
-      "date": "2026-12-19",
-      "city": "Bengaluru",
-      "venue": "TBA",
-      "genre": "Afro/Latin tech house",
-      "ticket_link": null,
-      "price": null,
-      "source_url": "https://happeningsaroundme.in/event/bangalore-hugel-india-tour-2026-bengaluru",
-      "date_found": "2026-10-26",
-      "status": "unconfirmed",
-      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
-      "score": 3,
-      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed."
+      "score_reason": "Four of your artists on one weekend (Mau P, Vintage Culture, Dom Dolla, Max Styler), plus Jamie Jones. Some of the festival is big-room, but you can skip those stages.",
+      "changes": [
+        "2026-11-02: Max Styler added to lineup"
+      ]
     },
     {
       "id": "sunburn-closing-2026",
-      "name": "Sunburn Festival 2026 – Closing Party",
+      "name": "Sunburn Festival 2026 Closing Party: HUGEL + Mochakk",
       "artists": [
-        "TBA"
+        "HUGEL",
+        "Mochakk"
       ],
       "date": "2026-12-20",
       "city": "Mumbai",
-      "venue": "Dome, NSCI SVP Stadium",
-      "genre": "TBA",
+      "venue": "MMRDA Grounds, BKC",
+      "genre": "Afro/Latin tech house, house",
       "ticket_link": "https://in.bookmyshow.com",
-      "price": null,
-      "source_url": "https://www.ticketfairy.com/word/2026/06/02/sunburn-continues-mumbai-era-with-mahalaxmi-racecourse-as-new-venue",
+      "price": "from ₹2,500 (one listing only)",
+      "source_url": "https://rollingstoneindia.com/hugel-india-tour-dates-tickets-cities-mochakk-boris-brejcha/",
       "date_found": "2026-10-23",
-      "status": "announced",
-      "score": 2,
-      "score_reason": "Lineup not announced, and Sunburn's 2026 bookings lean big-room. Recheck once artists are named.",
-      "notes": "Still no lineup as of 2026-10-26. One outlier source (Musicplus) says MMRA Grounds instead of NSCI Dome."
-    },
-    {
-      "id": "hugel-mumbai-2026",
-      "name": "HUGEL India Tour – Mumbai",
-      "artists": [
-        "HUGEL"
-      ],
-      "date": "2026-12-20",
-      "city": "Mumbai",
-      "venue": "TBA",
-      "genre": "Afro/Latin tech house",
-      "ticket_link": null,
-      "price": null,
-      "source_url": "https://happeningsaroundme.in/event/delhi-hugel-india-tour-2026-delhi",
-      "date_found": "2026-10-26",
-      "status": "unconfirmed",
-      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
-      "score": 4,
-      "score_reason": "Groovy Afro/Latin tech house in your home city. Confirm before planning around it."
+      "status": "on sale",
+      "score": 5,
+      "score_reason": "Two groovy tech house headliners at an open-air show in your city, and Mochakk's rescheduled India debut.",
+      "notes": "Starts 4 PM (Livefiesta). Earlier reports said NSCI Dome; Rolling Stone India and Bilkul now say MMRDA Grounds.",
+      "alt_source_url": "https://bilkulonline.com/2026/10/28/hugel-and-mochakk-to-pull-curtains-down-at-sunburn-festival-2026-closing-party/",
+      "changes": [
+        "2026-11-02: lineup TBA -> HUGEL + Mochakk; venue NSCI Dome -> MMRDA Grounds; announced -> on sale; score 2 -> 5"
+      ]
     },
     {
       "id": "francis-mercier-bengaluru-2026",
@@ -251,12 +251,15 @@
       "genre": "Afro/Latin tech house",
       "ticket_link": null,
       "price": null,
-      "source_url": "https://happeningsaroundme.in/event/delhi-hugel-india-tour-2026-delhi",
+      "source_url": "https://rollingstoneindia.com/hugel-india-tour-dates-tickets-cities-mochakk-boris-brejcha/",
       "date_found": "2026-10-26",
-      "status": "unconfirmed",
-      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
+      "status": "announced",
+      "notes": "HUGEL headlines (Rolling Stone India).",
       "score": 3,
-      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed."
+      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed.",
+      "changes": [
+        "2026-11-02: unconfirmed -> announced"
+      ]
     },
     {
       "id": "francis-mercier-hyderabad-2026",
@@ -288,16 +291,19 @@
       ],
       "date": "2026-12-26",
       "city": "Delhi NCR",
-      "venue": "TBA",
+      "venue": "Baansera Park, New Delhi",
       "genre": "Afro/Latin tech house",
-      "ticket_link": null,
+      "ticket_link": "https://thumpn.com/event/339TL4/india-tour-hugel-delhi",
       "price": null,
-      "source_url": "https://happeningsaroundme.in/event/delhi-hugel-india-tour-2026-delhi",
+      "source_url": "https://thumpn.com/event/339TL4/india-tour-hugel-delhi",
       "date_found": "2026-10-26",
-      "status": "unconfirmed",
-      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
+      "status": "on sale",
+      "notes": "Venue and tickets come from thumpN only.",
       "score": 3,
-      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed."
+      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed.",
+      "changes": [
+        "2026-11-02: venue TBA -> Baansera Park; unconfirmed -> on sale (thumpN)"
+      ]
     },
     {
       "id": "francis-mercier-goa-2026",
@@ -331,14 +337,17 @@
       "city": "Goa",
       "venue": "TBA",
       "genre": "Afro/Latin tech house",
-      "ticket_link": null,
+      "ticket_link": "https://www.district.in/events/hugel-india-tour-goa-2026-buy-tickets",
       "price": null,
-      "source_url": "https://happeningsaroundme.in/event/delhi-hugel-india-tour-2026-delhi",
+      "source_url": "https://www.district.in/events/hugel-india-tour-goa-2026-buy-tickets",
       "date_found": "2026-10-26",
-      "status": "unconfirmed",
-      "notes": "Only event-listing sites so far; the listing itself says an official announcement is pending.",
+      "status": "on sale",
+      "notes": "Listed on District; venue TBA.",
       "score": 4,
-      "score_reason": "Good fit, but it's the same night as Francis Mercier Goa, so you'd have to pick one."
+      "score_reason": "Good fit, but it's the same night as Francis Mercier Goa, so you'd have to pick one.",
+      "changes": [
+        "2026-11-02: unconfirmed -> on sale (District listing)"
+      ]
     }
   ],
   "watchlist": [
@@ -365,7 +374,7 @@
     }
   ],
   "checked_no_india_dates": {
-    "Fisher": "Echostage, Washington DC on Dec 27 (https://www.songkick.com/artists/158971-fisher)",
+    "Fisher": "Echostage, Washington DC on Dec 27 (https://www.songkick.com/artists/158971-fisher). A Fisher b2b Chris Lake EDC Thailand listing turned out to be Head Trip (Oct) mixed up with EDC Thailand (Jan).",
     "Chris Lake": "Echostage, Washington DC on Dec 26 (https://www.jambase.com/show/chris-lake-echostage-20261226)",
     "Solomun": "Factory Town, Miami on Dec 4 (https://www.jambase.com/show/solomun-factory-town-20261204)",
     "Dom Dolla": "No India date; plays Singapore Nov 27 and EDC Thailand",
@@ -373,9 +382,10 @@
     "Vintage Culture": "No India date; plays EDC Thailand",
     "Cloonee / Prospa / Max Styler": "No India or nearby dates found",
     "John Summit / Chris Stussy (now 'Chris Stassy') / Michael Bibi / Hugel / Sonny Fodera": "No India dates in the window",
-    "Mochakk / Keinemusik / Black Coffee": "Already toured India in 2026; no December India dates (Keinemusik Dubai desert show is Nov 21)",
+    "Mochakk / Keinemusik / Black Coffee": "CORRECTION: Mochakk's May India tour was postponed, and he now plays Dec 20 Mumbai plus Bengaluru (and maybe Hyderabad). Keinemusik and Black Coffee have no December India dates.",
     "Venues (antiSOCIAL, Kitty Su, Bonobo, Echo Arena, Hilltop)": "No house bookings with names published yet. Hilltop Dec 27–29 and NYE are psytrance.",
     "John Summit": "US arena dates Dec 4–12; Australian festival Dec 28–31",
-    "Black Coffee (Dubai)": "Ushuaïa Dubai listings found are 2024/2025 editions; no 2026 date"
+    "Black Coffee (Dubai)": "Ushuaïa Dubai listings found are 2024/2025 editions; no 2026 date",
+    "Adam Port": "India tour Nov 13–15 (Delhi, Kolkata, Bengaluru), before your window"
   }
 }
