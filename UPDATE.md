@@ -1,18 +1,17 @@
 # House/Tech House Tracker: India, Dec 3–30, 2026
 
-**Last run:** 2026-11-02 · **Booked:** Fred again.. Mumbai, Dec 8–9
+**Last run:** 2026-11-09 · **Booked:** Fred again.. Mumbai, Dec 8–9
 
 ## 🆕 NEW since last run
 
-- **⭐ Sunburn Closing Party: HUGEL + Mochakk, Mumbai, Sun Dec 20** (5/5). Venue is MMRDA Grounds, BKC, from 4 PM. Tickets are on sale, from ₹2,500 per one listing. Rolling Stone India and Bilkul Online report it. This is Mochakk's rescheduled India debut.
-- **Circus India: Bengaluru, Dec 18–19** at Terraform Arena (3/5). HUGEL, Boris Brejcha and Dean Turnley play; Mochakk's Bengaluru date is unclear.
-- **✈️ EDC Thailand adds Max Styler.** That makes four of your artists there: Mau P, Vintage Culture, Dom Dolla and Max Styler.
+No new events in India or near-India that fit your taste. I checked and skipped Tomorrowland Thailand (Pattaya, Dec 11–13), which is big-room and sold out, and HOME Festival Goa (Dec 29–30), which is Bollywood/Punjabi.
 
 ## 🔄 CHANGED
 
-- **Sunburn Closing Party:** lineup TBA → HUGEL + Mochakk. Venue changed from NSCI Dome to MMRDA Grounds. Score 2 → 5.
-- **HUGEL tour:** Rolling Stone India now confirms Kolkata (Dec 25) and the Circus shows in Hyderabad (Dec 18) and Bengaluru. Delhi (Dec 26) is at Baansera Park and on sale on thumpN. Goa (Dec 27) is on sale on District, venue TBA. HUGEL's Mumbai date is the Sunburn Closing Party.
-- **Correction:** I said last time that Mochakk had already toured India. His May tour was actually postponed, and he now plays in December.
+- **Circus Bengaluru (District Arena @ Terraform):** Mochakk plays **Dec 18** (per RA) and HUGEL **Dec 19** (per Wild City). The lineup adds I Hate Models (hard techno, skip that set), Yousef and LI|LU. Score 3 → 4.
+- **Circus Hyderabad:** it's a citywide, multi-venue event over three weekends, Dec 12–27. HUGEL plays Dec 18. Venues are still TBA.
+- **HUGEL's Mumbai, Kolkata and Delhi dates** are billed as his "MAKE THE GIRLS DANCE" editions.
+- **Sunburn Closing Party venue is still disputed.** Newer coverage says MMRDA Grounds; some Sunburn coverage still says NSCI Dome. Check BookMyShow before you buy.
 
 ## 📅 Full list (by date)
 
@@ -20,11 +19,11 @@
 |---|---|---|---|---|
 | Dec 5 | ✈️ &ME (Pacha ICONS) | Dubai, Playa Pacha | 3 | on sale |
 | Dec 8–9 | Fred again.. ✅ BOOKED | Mumbai, Mahalaxmi Race Course | 5 | booked |
-| Dec 18 | Circus Hyderabad (HUGEL) | Hyderabad, TBA | 3 | announced |
-| Dec 18–19 | Circus Bengaluru (HUGEL, Boris Brejcha) | Bengaluru, Terraform Arena | 3 | announced |
+| Dec 18 | Circus Hyderabad (HUGEL) | Hyderabad, multi-venue TBA | 3 | announced |
+| Dec 18–19 | Circus Bengaluru (Mochakk 18th, HUGEL 19th) | Bengaluru, Terraform | 4 | announced |
 | Dec 18–19 | Sunburn Festival (Chainsmokers, DJ Snake…) | Mumbai, Mahalaxmi Racecourse | 1 | on sale, from ₹3,500 |
 | Dec 18–20 | ✈️ EDC Thailand (Mau P, Vintage Culture, Dom Dolla, Max Styler) | Phuket, Rhythm Park | 4 | on sale |
-| **Dec 20** | **Sunburn Closing: HUGEL + Mochakk** | **Mumbai, MMRDA Grounds** | **5** | **on sale** |
+| **Dec 20** | **Sunburn Closing: HUGEL + Mochakk** | **Mumbai, MMRDA Grounds (disputed)** | **5** | **on sale** |
 | Dec 23 | Francis Mercier | Bengaluru, Cavore* | 4 | on sale |
 | **Dec 24** | **Francis Mercier: Solèy** | **Mumbai, Fairmont*** | **5** | **on sale** |
 | Dec 25 | Francis Mercier: Solèy | Gurugram, A DOT by GNH* | 3 | on sale |
@@ -38,13 +37,14 @@
 
 **⚠️ Clashes with Dec 8–9:** none. **Other overlaps:** HUGEL and Francis Mercier are both in Goa on Dec 27. EDC Thailand's last night (Dec 20) is the same night as the Sunburn Closing Party.
 
-**Plan idea:** stay in Mumbai for the Closing Party on Dec 20 and Francis Mercier on Dec 24. Both are in your city, four days apart.
+**Plan idea:** stay in Mumbai for the Closing Party on Dec 20 and Francis Mercier on Dec 24.
 
 ## 👀 Watchlist
 
-- **Circus Hyderabad:** venue and lineup expected this week.
-- **Sole DXB, Dubai, Dec 11–13:** no official lineup. Platinumlist shows some names (Overmono, Rema…) that are unverified.
-- **Serendisco, Colombo, Dec 19:** still no lineup.
+- **Circus Hyderabad:** venues and full lineup still to come.
+- **Francis Mercier:** promoter venues are still unpublished.
+- **Sole DXB, Dubai, Dec 11–13:** no official lineup. Platinumlist lists Overmono, Rema and others, but those are unverified.
+- **Serendisco, Colombo, Dec 19, from 4 PM:** still no lineup.
 - **EDC Thailand set times:** expected around Dec 12.
 
 ## ❌ Checked, no India dates

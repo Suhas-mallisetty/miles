@@ -2,11 +2,12 @@
   "meta": {
     "window": "2026-12-03 to 2026-12-30",
     "booked": "Fred again.. Mumbai, 2026-12-08 & 2026-12-09",
-    "last_run": "2026-11-02",
+    "last_run": "2026-11-09",
     "runs": [
       "2026-10-23",
       "2026-10-26",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-09"
     ]
   },
   "events": [
@@ -49,7 +50,7 @@
     },
     {
       "id": "hugel-hyderabad-2026",
-      "name": "Circus India – Hyderabad (HUGEL)",
+      "name": "Circus India – Hyderabad (HUGEL Dec 18)",
       "artists": [
         "HUGEL"
       ],
@@ -59,14 +60,15 @@
       "genre": "Afro/Latin tech house",
       "ticket_link": null,
       "price": null,
-      "source_url": "https://rollingstoneindia.com/hugel-india-tour-dates-tickets-cities-mochakk-boris-brejcha/",
+      "source_url": "https://www.hollywoodreporterindia.com/features/insight/circus-festival-heads-to-bengaluru-and-hyderabad-for-december-2026-editions",
       "date_found": "2026-10-26",
       "status": "announced",
-      "notes": "Rolling Stone India says venue and full lineup will be announced next week. Mochakk is also expected.",
+      "notes": "Circus Hyderabad is a citywide takeover across several venues, over three weekends from Dec 12 to 27. HUGEL plays Dec 18. Venues and the full lineup are still TBA, and Mochakk is still unconfirmed here.",
       "score": 3,
       "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed.",
       "changes": [
-        "2026-11-02: unconfirmed -> announced (Circus Hyderabad)"
+        "2026-11-02: unconfirmed -> announced (Circus Hyderabad)",
+        "2026-11-09: format clarified: multi-venue, weekends Dec 12–27"
       ]
     },
     {
@@ -99,28 +101,33 @@
     },
     {
       "id": "hugel-bengaluru-2026",
-      "name": "Circus India – Bengaluru (HUGEL, Boris Brejcha, Dean Turnley…)",
+      "name": "Circus India – Bengaluru (Mochakk Dec 18, HUGEL Dec 19)",
       "artists": [
+        "Mochakk",
         "HUGEL",
         "Boris Brejcha",
+        "I Hate Models",
+        "Yousef",
         "Dean Turnley",
-        "Mochakk (date unclear)"
+        "LI|LU"
       ],
       "date": "2026-12-18 / 2026-12-19",
       "city": "Bengaluru",
-      "venue": "Terraform Arena",
+      "venue": "District Arena @ Terraform",
       "genre": "tech house / melodic techno",
       "ticket_link": null,
       "price": null,
-      "source_url": "https://rollingstoneindia.com/hugel-india-tour-dates-tickets-cities-mochakk-boris-brejcha/",
+      "source_url": "https://www.thewildcity.com/news/21879-circus-announces-2026-edition-in-bengaluru-hyderabad-featuring-mochakk-boris-brejcha-i-hate-models-more",
       "date_found": "2026-10-26",
       "status": "announced",
-      "notes": "Rolling Stone India lists Circus Bengaluru on Dec 18 & 19 but doesn't say who plays which night. Mochakk is confirmed for Bengaluru, date unclear.",
-      "score": 3,
-      "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed.",
+      "notes": "RA lists Mochakk on Dec 18 at District Arena @ Terraform; Wild City puts HUGEL on Dec 19. I Hate Models is hard techno, so skip that set.",
+      "score": 4,
+      "score_reason": "Mochakk and HUGEL on back-to-back nights is a strong tech house pairing. You'd have to fly in, and part of the bill is harder techno (I Hate Models).",
       "changes": [
-        "2026-11-02: unconfirmed -> announced (Rolling Stone India); now part of Circus India at Terraform Arena"
-      ]
+        "2026-11-02: unconfirmed -> announced (Rolling Stone India); now part of Circus India at Terraform Arena",
+        "2026-11-09: night split confirmed (Mochakk Dec 18 / HUGEL Dec 19); lineup expanded; score 3 -> 4"
+      ],
+      "alt_source_url": "https://ra.co/dj/mochakk/tour-dates"
     },
     {
       "id": "edc-thailand-2026",
@@ -170,7 +177,7 @@
       "status": "on sale",
       "score": 5,
       "score_reason": "Two groovy tech house headliners at an open-air show in your city, and Mochakk's rescheduled India debut.",
-      "notes": "Starts 4 PM (Livefiesta). Earlier reports said NSCI Dome; Rolling Stone India and Bilkul now say MMRDA Grounds.",
+      "notes": "Starts 4 PM (Livefiesta). Earlier reports said NSCI Dome; Rolling Stone India and Bilkul now say MMRDA Grounds. Sources still disagree on the venue: some Sunburn coverage says NSCI Dome. Wild City says HUGEL's Mumbai date is a \"MAKE THE GIRLS DANCE\" edition. Check BookMyShow.",
       "alt_source_url": "https://bilkulonline.com/2026/10/28/hugel-and-mochakk-to-pull-curtains-down-at-sunburn-festival-2026-closing-party/",
       "changes": [
         "2026-11-02: lineup TBA -> HUGEL + Mochakk; venue NSCI Dome -> MMRDA Grounds; announced -> on sale; score 2 -> 5"
@@ -254,12 +261,13 @@
       "source_url": "https://rollingstoneindia.com/hugel-india-tour-dates-tickets-cities-mochakk-boris-brejcha/",
       "date_found": "2026-10-26",
       "status": "announced",
-      "notes": "HUGEL headlines (Rolling Stone India).",
+      "notes": "HUGEL headlines (Rolling Stone India). Billed as a HUGEL \"MAKE THE GIRLS DANCE\" edition (Wild City).",
       "score": 3,
       "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed.",
       "changes": [
         "2026-11-02: unconfirmed -> announced"
-      ]
+      ],
+      "alt_source_url": "https://t2online.in/events/events-1/-huge-l-night-alert--kolkata-gears-up-for-a-massive-christmas-with-french-dj-producer/2008913"
     },
     {
       "id": "francis-mercier-hyderabad-2026",
@@ -298,7 +306,7 @@
       "source_url": "https://thumpn.com/event/339TL4/india-tour-hugel-delhi",
       "date_found": "2026-10-26",
       "status": "on sale",
-      "notes": "Venue and tickets come from thumpN only.",
+      "notes": "Venue and tickets come from thumpN only. Billed as a HUGEL \"MAKE THE GIRLS DANCE\" edition (Wild City).",
       "score": 3,
       "score_reason": "Good fit, but you'd have to travel and the date is unconfirmed.",
       "changes": [
@@ -386,6 +394,8 @@
     "Venues (antiSOCIAL, Kitty Su, Bonobo, Echo Arena, Hilltop)": "No house bookings with names published yet. Hilltop Dec 27–29 and NYE are psytrance.",
     "John Summit": "US arena dates Dec 4–12; Australian festival Dec 28–31",
     "Black Coffee (Dubai)": "Ushuaïa Dubai listings found are 2024/2025 editions; no 2026 date",
-    "Adam Port": "India tour Nov 13–15 (Delhi, Kolkata, Bengaluru), before your window"
+    "Adam Port": "India tour Nov 13–15 (Delhi, Kolkata, Bengaluru), before your window",
+    "Tomorrowland Thailand (Pattaya, Dec 11–13)": "Mostly big-room (Swedish House Mafia, Garrix, DVLM), none of your artists, and reportedly sold out. Skipped.",
+    "HOME Festival Goa (Dec 29–30)": "Bollywood/Punjabi headliners (Arijit Singh, Karan Aujla). Skipped."
   }
 }
