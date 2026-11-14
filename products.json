@@ -1,0 +1,386 @@
+{
+  "meta": {
+    "trip": "Fly to India Dec 4, 2026. Everything must be DELIVERED by Dec 2.",
+    "budget_min": 200,
+    "budget_max": 500,
+    "black_friday": "2026-11-27",
+    "cyber_monday": "2026-11-30",
+    "deal_window_start": "2026-11-21",
+    "deal_window_end": "2026-12-01",
+    "stop_tracking_after": "2026-12-01",
+    "deliver_by": "2026-12-02",
+    "notes": "seed = a price seen while building this file (2026-11-14). The tracker writes seeds to prices.csv once so stores that block bots still show a starting price. Amazon ASINs marked asin_verified=false came from third-party pages: open the /dp/ link once and confirm it is the right product."
+  },
+  "items": [
+    {
+      "id": "neck_pillow",
+      "name": "Shiatsu neck/back massage pillow",
+      "recipient": "Shared",
+      "qty": 1,
+      "options": [
+        {
+          "id": "zyllion_zma13",
+          "name": "Zyllion ZMA-13 (corded, with heat)",
+          "image": "https://cdn.shopify.com/s/files/1/2482/7282/products/01.jpg?v=1660257433",
+          "target_price": 55.0,
+          "power": {
+            "plugs_into_wall": true,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "100-240V",
+            "verified": false,
+            "note": "Corded. Retailer listings say the included UL adapter covers 110-120V and 220-240V. Check the adapter label for 'INPUT 100-240V ~50/60Hz' before you fly. India needs a Type C/D plug adapter, not a voltage converter. The included car adapter is US 12V only, which is fine."
+          },
+          "listings": [
+            {
+              "id": "zma13_amazon",
+              "retailer": "Amazon",
+              "type": "amazon",
+              "asin": "B00BOYA2M2",
+              "asin_verified": false,
+              "url": "https://www.amazon.com/dp/B00BOYA2M2"
+            },
+            {
+              "id": "zma13_zyllion",
+              "retailer": "Zyllion.com",
+              "type": "shopify",
+              "url": "https://zyllion.com/products/shiatsu-back-and-neck-massager-pillow-with-heat-zma-13",
+              "seed": {
+                "price": 99.95,
+                "date": "2026-11-14T00:00:00",
+                "source": "zyllion.com product feed"
+              }
+            },
+            {
+              "id": "zma13_brookstone",
+              "retailer": "Brookstone",
+              "type": "search",
+              "url": "https://www.brookstone.com/search?q=zyllion",
+              "seed": {
+                "price": 74.95,
+                "date": "2026-11-14T00:00:00",
+                "source": "web search snapshot"
+              }
+            },
+            {
+              "id": "zma13_walmart",
+              "retailer": "Walmart",
+              "type": "search",
+              "url": "https://www.walmart.com/search?q=Zyllion+ZMA-13"
+            }
+          ]
+        },
+        {
+          "id": "zyllion_zma13rb",
+          "name": "Zyllion ZMA-13RB (rechargeable version)",
+          "image": "https://cdn.shopify.com/s/files/1/2482/7282/products/01_fee7fd87-3416-42e0-a068-b16cbe027950.jpg?v=1665688231",
+          "target_price": 55.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": true,
+            "usb_c": null,
+            "adapter_input": "unknown",
+            "verified": false,
+            "note": "Battery powered and charged from a supplied adapter. The charging connector type and adapter voltage aren't confirmed. Check the box or label for 100-240V before buying for India."
+          },
+          "listings": [
+            {
+              "id": "zma13rb_zyllion",
+              "retailer": "Zyllion.com",
+              "type": "shopify",
+              "url": "https://zyllion.com/products/rechargeable-shiatsu-back-and-neck-massager-pillow-with-heat-zma-13rb",
+              "seed": {
+                "price": 79.95,
+                "date": "2026-11-14T00:00:00",
+                "source": "zyllion.com product feed"
+              }
+            },
+            {
+              "id": "zma13rb_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Zyllion+ZMA-13RB"
+            }
+          ]
+        },
+        {
+          "id": "nekteck_neck",
+          "name": "Nekteck Cordless Neck and Back Massager",
+          "image": "https://cdn.shopify.com/s/files/1/0585/1755/3360/files/Nekteck_Cordless_Neck_and_Back_Massager-White.png?v=1787825550",
+          "target_price": 50.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": true,
+            "usb_c": null,
+            "adapter_input": "USB charger",
+            "verified": false,
+            "note": "Rechargeable battery with USB charging, per nekteck.com. Confirm on the listing or box that the port is USB-C. Any 100-240V USB phone charger then works in India. Up to about 1 hour per charge."
+          },
+          "listings": [
+            {
+              "id": "nekneck_nekteck",
+              "retailer": "Nekteck.com",
+              "type": "shopify",
+              "variant": "Gray",
+              "url": "https://nekteck.com/products/cordless-neck-and-shoulder-massager",
+              "seed": {
+                "price": 67.99,
+                "date": "2026-11-14T00:00:00",
+                "source": "nekteck.com product feed"
+              }
+            },
+            {
+              "id": "nekneck_bestbuy",
+              "retailer": "Best Buy",
+              "type": "html",
+              "url": "https://www.bestbuy.com/product/nekteck-cordless-neck-and-back-massager-gray/J3R8HZCGC9",
+              "seed": {
+                "price": 59.99,
+                "date": "2026-11-14T00:00:00",
+                "source": "web search snapshot"
+              }
+            },
+            {
+              "id": "nekneck_target",
+              "retailer": "Target",
+              "type": "search",
+              "url": "https://www.target.com/s?searchTerm=Nekteck+neck+and+back+massager",
+              "seed": {
+                "price": 65.99,
+                "date": "2026-11-14T00:00:00",
+                "source": "web search snapshot"
+              }
+            },
+            {
+              "id": "nekneck_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Nekteck+Cordless+Neck+and+Back+Massager"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foot_massager",
+      "name": "Shiatsu foot massager with heat",
+      "recipient": "Mom",
+      "qty": 1,
+      "options": [
+        {
+          "id": "renpho_fm059",
+          "name": "RENPHO Shiatsu Foot Massager, heat + air compression (RF-FM059R)",
+          "image": null,
+          "target_price": 70.0,
+          "power": {
+            "plugs_into_wall": true,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "100-240V",
+            "verified": false,
+            "note": "Corded, with an external DC adapter (about 12V 2.5A). A UAE retailer lists the RF-FM059 at 100-240V. Check the adapter label before buying. If it says 120V only, a cheap 100-240V 12V/2.5A replacement adapter fixes it."
+          },
+          "listings": [
+            {
+              "id": "fm059_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=RENPHO+Shiatsu+Foot+Massager+with+Heat+air+compression"
+            },
+            {
+              "id": "fm059_walmart",
+              "retailer": "Walmart",
+              "type": "search",
+              "url": "https://www.walmart.com/search?q=RENPHO+shiatsu+foot+massager+heat",
+              "seed": {
+                "price": 74.99,
+                "date": "2026-11-14T00:00:00",
+                "source": "web search snapshot"
+              }
+            },
+            {
+              "id": "fm059_target",
+              "retailer": "Target",
+              "type": "search",
+              "url": "https://www.target.com/s?searchTerm=RENPHO+foot+massager"
+            }
+          ]
+        },
+        {
+          "id": "renpho_d003r",
+          "name": "RENPHO Shiatsu Foot Massager Compact (D003R)",
+          "image": "https://cdn.shopify.com/s/files/1/0083/4630/4597/files/D003R_01.png?v=1767695680",
+          "target_price": 85.0,
+          "power": {
+            "plugs_into_wall": true,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "unknown",
+            "verified": false,
+            "note": "Corded. RENPHO's page doesn't give the adapter input. Check the adapter label for 100-240V."
+          },
+          "listings": [
+            {
+              "id": "d003r_renpho",
+              "retailer": "RENPHO.com",
+              "type": "shopify",
+              "url": "https://renpho.com/products/shiatsu-foot-massager-d003r",
+              "seed": {
+                "price": 109.99,
+                "date": "2026-11-14T00:00:00",
+                "source": "renpho.com product feed"
+              }
+            },
+            {
+              "id": "d003r_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=RENPHO+D003R+foot+massager"
+            }
+          ]
+        },
+        {
+          "id": "renpho_solheel",
+          "name": "RENPHO Solheel Foot Massager (3rd gen)",
+          "image": "https://cdn.shopify.com/s/files/1/0083/4630/4597/files/WMF06_01_b83e2591-7dfd-4827-b54a-9aabde9bf141.png?v=1767697341",
+          "target_price": 90.0,
+          "power": {
+            "plugs_into_wall": true,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "unknown",
+            "verified": false,
+            "note": "Corded, DC12V 2.5A input, 30W, per renpho.com. The AC adapter's input range isn't published. Check the label for 100-240V."
+          },
+          "listings": [
+            {
+              "id": "solheel_renpho",
+              "retailer": "RENPHO.com",
+              "type": "shopify",
+              "url": "https://renpho.com/products/solheel-foot-massager",
+              "seed": {
+                "price": 114.99,
+                "date": "2026-11-14T00:00:00",
+                "source": "renpho.com product feed"
+              }
+            },
+            {
+              "id": "solheel_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=RENPHO+Solheel+foot+massager"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knee_pair",
+      "name": "Cordless heated knee massagers (pair)",
+      "recipient": "Shared",
+      "qty": 1,
+      "options": [
+        {
+          "id": "nekteck_knee_pair",
+          "name": "Nekteck Cordless Knee Massager with Heat & Vibration (Pair)",
+          "image": "https://cdn.shopify.com/s/files/1/0585/1755/3360/files/Nekteck_Cordless_Knee_Massager_with_Heat_Vibration-single.png?v=1787885147",
+          "target_price": 45.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": true,
+            "usb_c": null,
+            "adapter_input": "USB charger",
+            "verified": false,
+            "note": "Cordless and rechargeable. Check whether it charges by USB-C. If it does, any 100-240V USB charger works in India."
+          },
+          "listings": [
+            {
+              "id": "knee_nekteck",
+              "retailer": "Nekteck.com",
+              "type": "shopify",
+              "variant": "Pair",
+              "url": "https://nekteck.com/products/cordless-knee-massager-with-heat-vibration",
+              "seed": {
+                "price": 53.99,
+                "date": "2026-11-14T00:00:00",
+                "source": "nekteck.com product feed"
+              }
+            },
+            {
+              "id": "knee_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Nekteck+cordless+knee+massager+heat+pair"
+            },
+            {
+              "id": "knee_walmart",
+              "retailer": "Walmart",
+              "type": "search",
+              "url": "https://www.walmart.com/search?q=Nekteck+knee+massager"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swim_goggles",
+      "name": "Comfort lap-swim goggles (man, late 50s)",
+      "recipient": "Dad",
+      "qty": 1,
+      "options": [
+        {
+          "id": "kayenne",
+          "name": "Aqua Sphere Kayenne (comfort fitness goggle)",
+          "image": "https://cdn.shopify.com/s/files/1/0589/6513/1440/files/19502-thickbox_default.jpg?v=1723590784",
+          "target_price": 22.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "kayenne_amazon",
+              "retailer": "Amazon",
+              "type": "amazon",
+              "asin": "B0030DJPA0",
+              "asin_verified": false,
+              "url": "https://www.amazon.com/dp/B0030DJPA0"
+            },
+            {
+              "id": "kayenne_walmart",
+              "retailer": "Walmart",
+              "type": "html",
+              "url": "https://www.walmart.com/ip/32301667"
+            },
+            {
+              "id": "kayenne_swim2000",
+              "retailer": "Swim2000",
+              "type": "shopify",
+              "url": "https://swim2000.com/products/aqua-sphere-kayenne-goggles",
+              "seed": {
+                "price": 22.4,
+                "date": "2026-11-14T00:00:00",
+                "source": "swim2000 product feed"
+              }
+            },
+            {
+              "id": "kayenne_simplyswim",
+              "retailer": "SimplySwim",
+              "type": "shopify",
+              "url": "https://www.simplyswim.com/products/aqua-sphere-kayenne-goggle-clear-lens",
+              "seed": {
+                "price": 29.0,
+                "date": "2026-11-14T00:00:00",
+                "source": "simplyswim product feed"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>India Gift Tracker</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --ink: #1d1d1b; --muted: #6b6a64; --line: #e4e2db;
+    --accent: #0f6e5c; --deal: #0f7a3a; --deal-bg: #e3f4e8; --warn: #9a5b00; --warn-bg: #fff2d9;
+    --bad: #b3261e; --bad-bg: #fde7e5; --bf: #f3e6ff; --bf-ink: #6a2ca8; --spark: #0f6e5c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151614; --card: #1f201d; --ink: #ecebe6; --muted: #a3a29b; --line: #34352f;
+      --accent: #5cc9b0; --deal: #6fdc95; --deal-bg: #173523; --warn: #f2b65a; --warn-bg: #3a2c13;
+      --bad: #ff8a80; --bad-bg: #3d1a18; --bf: #2d2139; --bf-ink: #d0a8ff; --spark: #5cc9b0;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 12px; }
+  .sub { color: var(--muted); margin: 0 0 16px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 20px; }
+  .chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 13px; }
+  .chip b { font-variant-numeric: tabular-nums; }
+  .chip.bf { background: var(--bf); color: var(--bf-ink); border-color: transparent; }
+  .chip.urgent { background: var(--bad-bg); color: var(--bad); border-color: transparent; }
+  .total { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .total .big { font-size: 32px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .meter { position: relative; height: 10px; background: var(--line); border-radius: 6px; margin: 10px 0 6px; overflow: hidden; }
+  .meter .fill { position: absolute; inset: 0 auto 0 0; background: var(--accent); border-radius: 6px; }
+  .meter .band { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--deal) 25%, transparent); }
+  .lines { display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; margin-top: 10px; font-size: 14px; }
+  .lines span:nth-child(even) { text-align: right; font-variant-numeric: tabular-nums; }
+  .item { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin: 16px 0; }
+  .item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .item-head h3 { margin: 0; font-size: 17px; }
+  .recipient { color: var(--muted); font-size: 13px; }
+  .opt { display: grid; grid-template-columns: 96px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid var(--line); }
+  .opt:first-of-type { border-top: 0; }
+  .opt img, .ph { width: 96px; height: 96px; object-fit: contain; background: #fff; border-radius: 10px; border: 1px solid var(--line); }
+  .ph { display: grid; place-items: center; color: #888; font-size: 11px; text-align: center; padding: 6px; }
+  .opt-title { font-weight: 600; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .pick { font-size: 11px; background: var(--accent); color: #fff; border-radius: 6px; padding: 1px 7px; }
+  .meta-row { color: var(--muted); font-size: 13px; margin: 2px 0 8px; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 6px; letter-spacing: .02em; }
+  .b-deal { background: var(--deal-bg); color: var(--deal); }
+  .b-bf { background: var(--bf); color: var(--bf-ink); }
+  .b-ok { background: var(--deal-bg); color: var(--deal); }
+  .b-warn { background: var(--warn-bg); color: var(--warn); }
+  .b-bad { background: var(--bad-bg); color: var(--bad); }
+  .b-mute { background: var(--line); color: var(--muted); font-weight: 500; }
+  .opt > div { min-width: 0; }
+  .tbl-wrap { overflow-x: auto; }
+  .panel { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { text-align: left; color: var(--muted); font-weight: 500; padding: 4px 8px 4px 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  td { padding: 6px 8px 6px 0; border-bottom: 1px solid var(--line); vertical-align: middle; white-space: nowrap; }
+  td.num { font-variant-numeric: tabular-nums; }
+  tr.is-best td { font-weight: 600; }
+  a { color: var(--accent); }
+  .power-note { font-size: 12.5px; color: var(--muted); margin-top: 6px; white-space: normal; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .panel ul { margin: 6px 0; padding-left: 20px; }
+  .panel li { margin: 4px 0; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  code { background: var(--line); padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+  .foot { color: var(--muted); font-size: 12px; margin-top: 28px; }
+  @media (max-width: 720px) {
+    .grid2 { grid-template-columns: 1fr; }
+    .opt { grid-template-columns: 64px 1fr; }
+    .opt img, .ph { width: 64px; height: 64px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>India Gift Tracker</h1>
+  <p class="sub" id="sub"></p>
+  <div class="chips" id="chips"></div>
+
+  <div class="total" id="total"></div>
+
+  <h2>Items</h2>
+  <div id="items"></div>
+
+  <h2>India power check (230V, 50Hz, Type C/D plugs)</h2>
+  <div class="panel" id="power"></div>
+
+  <h2>New Hampshire shopping trip</h2>
+  <div class="panel">
+    <p style="margin-top:0"><b>NH has no sales tax</b>, so an in-store price there beats the same online price shipped to a taxed state.
+      Take this page on your phone and log anything you see with
+      <code>python3 tracker.py log --new ITEM OPTION "Store, Town" PRICE</code>.</p>
+    <div class="grid2">
+      <div>
+        <b>Massagers (neck pillow, foot, knee)</b>
+        <ul>
+          <li><b>Best Buy</b> (Nashua, Salem, Manchester, Concord, Newington). Carries the Nekteck neck massager online ($59.99). Check "pick up today".</li>
+          <li><b>Target / Walmart</b> (most NH towns). Check RENPHO, HoMedics and Nekteck stock in the app before you drive.</li>
+          <li><b>TJ Maxx / Marshalls / HomeGoods</b>. Often have RENPHO and HoMedics massagers well below list price. Stock is hit or miss.</li>
+          <li><b>Kohl's</b>. Sells RENPHO and HoMedics massagers, and on Black Friday adds Kohl's Cash on top of the sale.</li>
+          <li><b>Costco (Nashua)</b>. Holiday massager bundles appear in Nov–Dec.</li>
+        </ul>
+      </div>
+      <div>
+        <b>Swim goggles</b>
+        <ul>
+          <li><b>Dick's Sporting Goods</b> (Nashua, Salem, Manchester, Newington). Speedo and TYR fitness goggles. Try them on: press each eyecup lightly to your face without the strap. A good fit holds suction for a second.</li>
+          <li><b>Outlet malls</b>: Merrimack Premium Outlets (Merrimack), Tanger (Tilton), Settlers Green (North Conway, worth it if you're going north), Kittery, ME (just over the bridge from Portsmouth). Look at Nike, Under Armour and sports outlets for swim gear. Massager brands rarely have outlet stores.</li>
+          <li><b>Alternatives to try on</b> if the Kayenne doesn't fit: TYR Special Ops 2.0 (<i>non-polarized</i>, since polarized is too dark indoors), Speedo Hydro Comfort, Aqua Sphere Seal 3 (mask-style, most comfortable for long swims).</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-bottom:0;color:var(--muted);font-size:13px">Store stock changes daily. Call or check each store's app before driving.</p>
+  </div>
+
+  <p class="foot" id="foot"></p>
+</main>
+
+<script>
+const S = /*__DATA__*/null;
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money = (v) => v == null ? "—" : "$" + v.toFixed(2);
+const day = (s) => new Date(s + "T00:00:00");
+const short = (s) => s ? new Date(s).toLocaleDateString(undefined, {month: "short", day: "numeric"}) : "";
+const m = S.meta;
+
+// ---------- header + countdown
+const today = new Date(); today.setHours(0,0,0,0);
+const daysTo = (d) => Math.round((day(d) - today) / 864e5);
+$("#sub").textContent = m.trip;
+const chip = (label, d, cls="") => {
+  const n = daysTo(d);
+  const when = n > 1 ? `in ${n} days` : n === 1 ? "tomorrow" : n === 0 ? "TODAY" : `${-n}d ago`;
+  return `<span class="chip ${cls}">${label} · ${short(d + "T12:00")} · <b>${when}</b></span>`;
+};
+const inWindow = today >= day(m.black_friday) && today <= day(m.cyber_monday);
+$("#chips").innerHTML =
+  chip("Black Friday", m.black_friday, "bf") + chip("Cyber Monday", m.cyber_monday, "bf") +
+  chip("Last order day (expedited)", m.stop_tracking_after, daysTo(m.stop_tracking_after) <= 3 ? "urgent" : "") +
+  chip("Must arrive", m.deliver_by) + chip("Flight", "2026-12-04");
+
+// ---------- total
+const lo = m.budget_min, hi = m.budget_max, max = hi * 1.2;
+const pct = (v) => Math.min(100, v / max * 100);
+const status = S.total > hi ? `<span class="badge b-bad">over budget</span>` :
+               S.total >= lo ? `<span class="badge b-ok">in budget</span>` :
+               `<span class="badge b-mute">under $${lo}: room for extras</span>`;
+$("#total").innerHTML = `
+  <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
+    <div><div class="recipient">Running total (cheapest in-stock pick for each item)</div>
+    <div class="big">${money(S.total)}</div></div>${status}</div>
+  <div class="meter"><div class="band" style="left:${pct(lo)}%;width:${pct(hi)-pct(lo)}%"></div>
+    <div class="fill" style="width:${pct(S.total)}%"></div></div>
+  <div class="recipient">Budget $${lo}–$${hi} (shaded)</div>
+  <div class="lines">${S.items.map(it => {
+    const o = it.options.find(o => o.id === it.pick);
+    return `<span>${esc(it.name)}${o ? ` <span class="recipient">· ${esc(o.name)} @ ${esc(o.best.retailer)}</span>` : ""}</span><span>${money(it.subtotal)}</span>`;
+  }).join("")}</div>`;
+
+// ---------- sparkline with the BF→CM band
+function spark(hist) {
+  const W = 120, H = 30, t0 = day("2026-11-14").getTime(), t1 = day(m.stop_tracking_after).getTime() + 864e5;
+  const x = (t) => ((t - t0) / (t1 - t0)) * W;
+  const bfx = x(day(m.black_friday).getTime()), cmx = x(day(m.cyber_monday).getTime() + 864e5);
+  let path = "";
+  if (hist.length) {
+    const ps = hist.map(h => h[1]), mn = Math.min(...ps), mx = Math.max(...ps), span = (mx - mn) || 1;
+    const y = (p) => H - 4 - ((p - mn) / span) * (H - 8);
+    const pts = hist.map(h => [Math.max(0, Math.min(W, x(new Date(h[0]).getTime()))), y(h[1])]);
+    if (pts.length === 1) pts.push([pts[0][0] + 2, pts[0][1]]);
+    path = `<polyline fill="none" stroke="var(--spark)" stroke-width="1.6" points="${pts.map(p => p.join(",")).join(" ")}"/>` +
+           `<circle cx="${pts.at(-1)[0]}" cy="${pts.at(-1)[1]}" r="2.2" fill="var(--spark)"/>`;
+  }
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" aria-label="price history"><rect x="${bfx}" y="0" width="${cmx-bfx}" height="${H}" fill="var(--bf)"/>${path}</svg>`;
+}
+
+// ---------- items
+const flagBadge = (f) => `<span class="badge b-${f.level}">${f.level === "ok" ? "🔌✓" : f.level === "warn" ? "⚠" : "⛔"} ${esc(f.label)}</span>`;
+const statusCell = (l) => {
+  if (l.last_status === "blocked") return `<span class="badge b-warn" title="${esc(l.last_note)}">blocked</span>${l.camel ? ` <a href="${l.camel}" target="_blank" rel="noopener">set alert</a>` : ""}`;
+  if (l.last_status === "error") return `<span class="badge b-warn" title="${esc(l.last_note)}">error</span>`;
+  if (l.last_status === "seed") return `<span class="badge b-mute">snapshot</span>`;
+  if (l.last_status === "manual" || l.type === "search" || l.type === "manual") return `<span class="badge b-mute">${l.current == null ? "check manually" : "logged by you"}</span>`;
+  if (l.in_stock === "false") return `<span class="badge b-bad">out of stock</span>`;
+  return `<span class="badge b-mute">live</span>`;
+};
+$("#items").innerHTML = S.items.map(it => `
+  <section class="item">
+    <div class="item-head"><h3>${esc(it.name)}</h3><span class="recipient">for ${esc(it.recipient)} · qty ${it.qty}</span></div>
+    ${it.options.map(o => `
+      <div class="opt">
+        ${o.image ? `<img src="${esc(o.image)}" alt="${esc(o.name)}" loading="lazy" onerror="this.outerHTML='<div class=ph>no photo</div>'">` : `<div class="ph">photo at retailer link</div>`}
+        <div>
+          <div class="opt-title">${esc(o.name)} ${o.id === it.pick ? `<span class="pick">cheapest pick</span>` : ""}
+            ${o.listings.some(l => l.deal) ? `<span class="badge b-deal">DEAL</span>` : ""}
+            ${o.listings.some(l => l.window_drop) ? `<span class="badge b-bf">BF/CM DROP</span>` : ""}</div>
+          <div class="meta-row">Target ${money(o.target_price)} · ${flagBadge(o.india_flag)}</div>
+          <div class="tbl-wrap"><table>
+            <thead><tr><th>Retailer</th><th>Current</th><th>Lowest seen</th><th></th><th>Nov 14 → Dec 1 <span class="badge b-bf">BF–CM</span></th><th>Status</th></tr></thead>
+            <tbody>${o.listings.map(l => `
+              <tr class="${o.best && o.best.id === l.id ? "is-best" : ""}">
+                <td>${l.url ? `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.retailer)}</a>` : esc(l.retailer)}</td>
+                <td class="num">${money(l.current)}${l.current_at ? ` <span class="recipient">${short(l.current_at)}</span>` : ""}</td>
+                <td class="num">${money(l.lowest)}${l.lowest_at ? ` <span class="recipient">${short(l.lowest_at)}</span>` : ""}</td>
+                <td>${l.deal ? `<span class="badge b-deal">DEAL</span>` : ""} ${l.window_drop ? `<span class="badge b-bf">−${money(l.window_drop)} BF/CM</span>` : ""}</td>
+                <td>${spark(l.history)}</td>
+                <td>${statusCell(l)}</td>
+              </tr>`).join("")}</tbody>
+          </table></div>
+          <div class="power-note">${esc(o.power.note)}</div>
+        </div>
+      </div>`).join("")}
+  </section>`).join("");
+
+// ---------- power summary
+const allOpts = S.items.flatMap(it => it.options.map(o => ({...o, item: it.name})));
+$("#power").innerHTML = `
+  <p style="margin-top:0">India runs on 230V at 50Hz. Anything that plugs into the wall needs its adapter labelled <b>INPUT 100-240V ~ 50/60Hz</b>.
+  With that label you only need a cheap Type C/D plug adapter. Without it, a 120V-only adapter can burn out. USB-C rechargeable items are safest because any phone charger works.</p>
+  <table><thead><tr><th>Option</th><th>Power</th><th>Check</th></tr></thead><tbody>
+  ${allOpts.map(o => `<tr><td style="white-space:normal">${esc(o.name)}</td>
+     <td>${o.power.plugs_into_wall ? "wall plug" : o.power.rechargeable ? "rechargeable" : "none"}</td>
+     <td style="white-space:normal">${flagBadge(o.india_flag)}</td></tr>`).join("")}
+  </tbody></table>`;
+
+$("#foot").innerHTML = `Generated ${esc(S.generated)} by tracker.py. "snapshot" = starting price recorded on Nov 14 while building the list. Purple band = Black Friday through Cyber Monday (Nov 27–30). ${inWindow ? "<b>Deal window is live: run the tracker twice a day.</b>" : ""}`;
+</script>
+</body>
+</html>
