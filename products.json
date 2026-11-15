@@ -623,10 +623,38 @@
       "qty": 1,
       "options": [
         {
-          "id": "tc_sweater_2pk",
-          "name": "True Classic Dressy Crew Neck Sweater 2-Pack",
-          "image": "https://cdn.shopify.com/s/files/1/0220/4008/4552/files/Dressy-Crew-Neck-Sweater-2-Pack.jpg?v=1792386007",
-          "target_price": 90.0,
+          "id": "on_essential_sweater",
+          "name": "Old Navy Essential Crew-Neck Sweater",
+          "image": "https://oldnavy.gap.com/webcontent/0062/808/841/cn62808841.jpg",
+          "target_price": 20.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "Old Navy's page doesn't expose size stock to the tracker. Check that L is in stock when you buy."
+          },
+          "listings": [
+            {
+              "id": "on_sweater_site",
+              "retailer": "Old Navy",
+              "type": "html",
+              "url": "https://oldnavy.gap.com/browse/product.do?pid=903462052"
+            },
+            {
+              "id": "on_sweater_all",
+              "retailer": "Old Navy (all sweaters)",
+              "type": "search",
+              "url": "https://oldnavy.gap.com/browse/men/shop-all-mens/sweaters?cid=1031099"
+            }
+          ]
+        },
+        {
+          "id": "budget_sweater",
+          "name": "Target Goodfellow / Uniqlo merino",
+          "image": null,
+          "target_price": 25.0,
           "power": {
             "plugs_into_wall": false,
             "rechargeable": false,
@@ -637,11 +665,50 @@
           },
           "listings": [
             {
-              "id": "tc_sweater_2pk_site",
-              "retailer": "True Classic",
-              "type": "shopify",
-              "size": "L",
-              "url": "https://www.trueclassictees.com/products/truffle-fiord-crew-neck-sweater-2-pack"
+              "id": "target_goodfellow",
+              "retailer": "Target",
+              "type": "search",
+              "url": "https://www.target.com/s?searchTerm=goodfellow+men%27s+sweater"
+            },
+            {
+              "id": "uniqlo_merino",
+              "retailer": "Uniqlo",
+              "type": "search",
+              "url": "https://www.uniqlo.com/us/en/search?q=extra%20fine%20merino%20crew%20neck%20sweater%20men"
+            }
+          ]
+        },
+        {
+          "id": "other_brand_sweaters",
+          "name": "Other brands: Gap, H&M, Hollister",
+          "image": null,
+          "target_price": 25.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "gap_sweater",
+              "retailer": "Gap Factory",
+              "type": "search",
+              "url": "https://www.gapfactory.com/browse/men/sweaters?cid=1041171"
+            },
+            {
+              "id": "hm_sweater",
+              "retailer": "H&M",
+              "type": "search",
+              "url": "https://www2.hm.com/en_us/men/products/cardigans-sweaters.html"
+            },
+            {
+              "id": "hollister_sweater",
+              "retailer": "Hollister",
+              "type": "search",
+              "url": "https://www.hollisterco.com/shop/us/guys-sweaters"
             }
           ]
         },
@@ -671,67 +738,6 @@
               }
             }
           ]
-        },
-        {
-          "id": "llbean_ragg",
-          "name": "L.L.Bean Classic Ragg Wool Crewneck (100% lambswool)",
-          "image": null,
-          "target_price": 65.0,
-          "power": {
-            "plugs_into_wall": false,
-            "rechargeable": false,
-            "usb_c": false,
-            "adapter_input": "n/a",
-            "verified": true,
-            "note": "No power needed."
-          },
-          "listings": [
-            {
-              "id": "llbean_ragg_site",
-              "retailer": "L.L.Bean",
-              "type": "search",
-              "url": "https://www.llbean.com/llb/shop/123770",
-              "seed": {
-                "price": 89.95,
-                "date": "2026-11-15T00:00:00",
-                "source": "web search snapshot"
-              }
-            }
-          ]
-        },
-        {
-          "id": "budget_sweater",
-          "name": "Budget picks: Target Goodfellow / Uniqlo merino / Quince cashmere",
-          "image": null,
-          "target_price": 30.0,
-          "power": {
-            "plugs_into_wall": false,
-            "rechargeable": false,
-            "usb_c": false,
-            "adapter_input": "n/a",
-            "verified": true,
-            "note": "No power needed."
-          },
-          "listings": [
-            {
-              "id": "target_goodfellow",
-              "retailer": "Target",
-              "type": "search",
-              "url": "https://www.target.com/s?searchTerm=goodfellow+men%27s+sweater"
-            },
-            {
-              "id": "uniqlo_merino",
-              "retailer": "Uniqlo",
-              "type": "search",
-              "url": "https://www.uniqlo.com/us/en/search?q=extra%20fine%20merino%20crew%20neck%20sweater%20men"
-            },
-            {
-              "id": "quince_cashmere",
-              "retailer": "Quince",
-              "type": "search",
-              "url": "https://www.quince.com/men/sweaters"
-            }
-          ]
         }
       ]
     },
@@ -743,6 +749,34 @@
       "size": "L (men's)",
       "qty": 1,
       "options": [
+        {
+          "id": "on_rotation_crew",
+          "name": "Old Navy Loose Rotation Crew-Neck Sweatshirt",
+          "image": "https://oldnavy.gap.com/webcontent/0060/256/374/cn60256374.jpg",
+          "target_price": 15.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "Old Navy's page doesn't expose size stock to the tracker. Check that L is in stock when you buy."
+          },
+          "listings": [
+            {
+              "id": "on_crew_site",
+              "retailer": "Old Navy",
+              "type": "html",
+              "url": "https://oldnavy.gap.com/browse/product.do?pid=407508212"
+            },
+            {
+              "id": "on_crew_all",
+              "retailer": "Old Navy (all crewnecks)",
+              "type": "search",
+              "url": "https://oldnavy.gap.com/shop/mens-crew-neck-sweatshirt-0aez09b"
+            }
+          ]
+        },
         {
           "id": "champion_powerblend_crew",
           "name": "Champion Powerblend Crewneck Sweatshirt",
@@ -796,31 +830,24 @@
           ]
         },
         {
-          "id": "champion_reverse_weave",
-          "name": "Champion Reverse Weave Crewneck (heavyweight)",
-          "image": "https://cdn.shopify.com/s/files/1/0665/9001/5680/files/CPM253FC13_R340_Front_2048x2048_cafcae1c-3d8f-4c6e-bc03-e710c6642f42.jpg?v=1780386382",
-          "target_price": 40.0,
+          "id": "costco_puma_hoodie",
+          "name": "PUMA Men's Fleece Hoodie (Costco)",
+          "image": null,
+          "target_price": 18.0,
           "power": {
             "plugs_into_wall": false,
             "rechargeable": false,
             "usb_c": false,
             "adapter_input": "n/a",
             "verified": true,
-            "note": "No power needed."
+            "note": "Costco blocks the tracker. Check the app or warehouse for the price."
           },
           "listings": [
             {
-              "id": "ch_rw_site",
-              "retailer": "Champion",
-              "type": "shopify",
-              "size": "L",
-              "url": "https://www.champion.com/products/champion-reverse-weave-crewneck-sweatshirt-c-logo-platinum-silver-heather"
-            },
-            {
-              "id": "ch_rw_amazon",
-              "retailer": "Amazon",
+              "id": "costco_hoodies",
+              "retailer": "Costco",
               "type": "search",
-              "url": "https://www.amazon.com/s?k=Champion+Reverse+Weave+crewneck+men"
+              "url": "https://www.costco.com/opt/affordable-sweatshirts"
             }
           ]
         },
@@ -845,6 +872,46 @@
               "url": "https://www.amazon.com/s?k=Hanes+Ultimate+heavyweight+fleece+crewneck+men"
             }
           ]
+        },
+        {
+          "id": "other_brand_sweatshirts",
+          "name": "Other brands: H&M, Gap, Hollister, adidas",
+          "image": null,
+          "target_price": 20.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "hm_sweat",
+              "retailer": "H&M",
+              "type": "search",
+              "url": "https://www2.hm.com/en_us/men/products/hoodies-sweatshirts.html"
+            },
+            {
+              "id": "gap_sweat",
+              "retailer": "Gap Factory",
+              "type": "search",
+              "url": "https://www.gapfactory.com/browse/men/sweatshirts-and-sweatpants?cid=1041168"
+            },
+            {
+              "id": "hollister_sweat",
+              "retailer": "Hollister",
+              "type": "search",
+              "url": "https://www.hollisterco.com/shop/us/guys-hoodies-sweatshirts"
+            },
+            {
+              "id": "adidas_sweat",
+              "retailer": "adidas",
+              "type": "search",
+              "url": "https://www.adidas.com/us/men-black_friday-hoodies_sweatshirts"
+            }
+          ]
         }
       ]
     },
@@ -856,6 +923,67 @@
       "size": "L (men's)",
       "qty": 1,
       "options": [
+        {
+          "id": "on_tapered_jogger",
+          "name": "Old Navy Tapered Jogger Sweatpants",
+          "image": "https://oldnavy.gap.com/webcontent/0052/450/626/cn52450626.jpg",
+          "target_price": 15.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "Old Navy's page doesn't expose size stock to the tracker. Check that L is in stock when you buy."
+          },
+          "listings": [
+            {
+              "id": "on_jog_site",
+              "retailer": "Old Navy",
+              "type": "html",
+              "url": "https://oldnavy.gap.com/browse/product.do?pid=407510042"
+            },
+            {
+              "id": "on_jog_all",
+              "retailer": "Old Navy (all fleece joggers)",
+              "type": "search",
+              "url": "https://oldnavy.gap.com/shop/fleece-joggers-for-men-0aez03a"
+            }
+          ]
+        },
+        {
+          "id": "costco_puma_jogger",
+          "name": "PUMA Men's Fleece Jogger (Costco)",
+          "image": null,
+          "target_price": 16.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "Costco blocks the tracker (HTTP 429). Check the Costco app or the Nashua warehouse. Costco has also had adidas fleece joggers for $9.97, last seen Oct 16 and out of stock online."
+          },
+          "listings": [
+            {
+              "id": "costco_puma_jog",
+              "retailer": "Costco",
+              "type": "search",
+              "url": "https://www.costco.com/p/-/puma-mens-fleece-jogger/4000238381",
+              "seed": {
+                "price": 19.99,
+                "date": "2026-11-15T12:00:00",
+                "source": "Costco listing / warehouse price tracker"
+              }
+            },
+            {
+              "id": "costco_joggers_all",
+              "retailer": "Costco (all men's joggers)",
+              "type": "search",
+              "url": "https://www.costco.com/opt/mens-joggers-with-pockets"
+            }
+          ]
+        },
         {
           "id": "champion_powerblend_jogger",
           "name": "Champion Powerblend Joggers",
@@ -886,54 +1014,8 @@
           ]
         },
         {
-          "id": "tc_active_jogger_2pk",
-          "name": "True Classic Active Joggers 2-Pack",
-          "image": "https://cdn.shopify.com/s/files/1/0220/4008/4552/files/CoreActiveJogger2-Pack_2c15894c-ef2a-418f-a3a5-03f4ff66e01f.jpg?v=1762280630",
-          "target_price": 65.0,
-          "power": {
-            "plugs_into_wall": false,
-            "rechargeable": false,
-            "usb_c": false,
-            "adapter_input": "n/a",
-            "verified": true,
-            "note": "No power needed."
-          },
-          "listings": [
-            {
-              "id": "tc_jog_2pk_site",
-              "retailer": "True Classic",
-              "type": "shopify",
-              "size": "L",
-              "url": "https://www.trueclassictees.com/products/black-charcoal-active-jogger-2-pack"
-            }
-          ]
-        },
-        {
-          "id": "tc_qz_jogger_set",
-          "name": "True Classic Quarter-Zip Fleece + Jogger set (L/L)",
-          "image": "https://cdn.shopify.com/s/files/1/0220/4008/4552/files/Black-Half-Zip-Fleece-Sweatshirt-_-Jogger-2-Pack.jpg?v=1762286469",
-          "target_price": 80.0,
-          "power": {
-            "plugs_into_wall": false,
-            "rechargeable": false,
-            "usb_c": false,
-            "adapter_input": "n/a",
-            "verified": true,
-            "note": "No power needed."
-          },
-          "listings": [
-            {
-              "id": "tc_set_site",
-              "retailer": "True Classic",
-              "type": "shopify",
-              "size": "L",
-              "url": "https://www.trueclassictees.com/products/black-half-zip-fleece-sweatshirt-jogger-2-pack"
-            }
-          ]
-        },
-        {
-          "id": "other_joggers",
-          "name": "Amazon Essentials / Under Armour Rival Fleece",
+          "id": "adidas_ess_jogger",
+          "name": "adidas Essentials 3-Stripes Fleece Pants",
           "image": null,
           "target_price": 25.0,
           "power": {
@@ -942,20 +1024,87 @@
             "usb_c": false,
             "adapter_input": "n/a",
             "verified": true,
-            "note": "No power needed."
+            "note": "adidas.com blocks the tracker. $28 was on its Black Friday joggers page on Nov 15."
           },
           "listings": [
             {
-              "id": "amz_ess_jogger",
-              "retailer": "Amazon",
+              "id": "adidas_jog_site",
+              "retailer": "adidas",
               "type": "search",
-              "url": "https://www.amazon.com/s?k=Amazon+Essentials+men%27s+fleece+jogger"
+              "url": "https://www.adidas.com/us/black_friday-joggers",
+              "seed": {
+                "price": 28.0,
+                "date": "2026-11-15T12:00:00",
+                "source": "adidas Black Friday joggers page (search snapshot)"
+              }
             },
             {
-              "id": "ua_rival_jogger",
-              "retailer": "Under Armour",
+              "id": "adidas_jog_amazon",
+              "retailer": "Amazon",
               "type": "search",
-              "url": "https://www.underarmour.com/en-us/search?q=rival+fleece+joggers+men"
+              "url": "https://www.amazon.com/s?k=adidas+essentials+fleece+jogger+men"
+            }
+          ]
+        },
+        {
+          "id": "nike_club_jogger",
+          "name": "Nike Sportswear Club Fleece Joggers",
+          "image": "https://static.nike.com/a/images/t_default/08a1343f-a210-4a6f-a79c-5ac1b8ddb629/M+NK+CLUB+BB+JOGGER+FT.png",
+          "target_price": 35.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "Full price now ($60). Nike's Black Friday sale usually brings it to about $28\u201340."
+          },
+          "listings": [
+            {
+              "id": "nike_jog_site",
+              "retailer": "Nike",
+              "type": "html",
+              "url": "https://www.nike.com/t/sportswear-club-fleece-mens-joggers-KflRdQ/BV2671-010"
+            }
+          ]
+        },
+        {
+          "id": "other_brand_joggers",
+          "name": "Other brands: H&M, Gap, Hollister, Puma",
+          "image": null,
+          "target_price": 20.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "These sites block the tracker. Open them during Black Friday week, and log any good price with tracker.py log."
+          },
+          "listings": [
+            {
+              "id": "hm_jog",
+              "retailer": "H&M",
+              "type": "search",
+              "url": "https://www2.hm.com/en_us/men/products/pants/joggers.html"
+            },
+            {
+              "id": "gap_jog",
+              "retailer": "Gap Factory",
+              "type": "search",
+              "url": "https://www.gapfactory.com/browse/men/sweatshirts-and-sweatpants?cid=1041168"
+            },
+            {
+              "id": "hollister_jog",
+              "retailer": "Hollister",
+              "type": "search",
+              "url": "https://www.hollisterco.com/shop/us/guys-joggers"
+            },
+            {
+              "id": "puma_jog",
+              "retailer": "Puma",
+              "type": "search",
+              "url": "https://us.puma.com/us/en/men/clothing/pants"
             }
           ]
         }

@@ -89,3 +89,7 @@ Goggles are the item worth buying in a store, because he can try them on. Comfor
 - **Clothes, size L (men's)**: sweater, sweatshirt and joggers each count their cheapest option. Champion and True Classic listings check **only the size-L variant**, including whether L is in stock (the `"size": "L"` field on the listing). True Classic's quarter-zip and jogger set requires L/L.
 - Live prices come from Champion, True Classic, GameNerdz and Miniature Market. L.L.Bean, Quince, Uniqlo, Target, Walmart and Amazon block the tracker or load prices in the browser, so they are link-only or Nov 15 snapshots. Log what you see with `tracker.py log`.
 - To track women's L, add an item (copy `sweatshirt`) with the women's product links and `"size": "L"`.
+
+## Cheaper clothes (updated Nov 15)
+Each clothing item counts its cheapest option. Brands tracked: **Old Navy** (live price), **Costco** (Puma/adidas; snapshot and link, since Costco blocks scripts), **Champion** (live, size-aware), **Nike** (live), **adidas** (snapshot and link), plus link-only rows for **H&M, Gap Factory, Hollister, Puma, Uniqlo, Target**.
+Old Navy prices are live, but its pages don't show size stock to the tracker, so check that L is in stock when you buy. When you see a good price at a link-only store, record it with `tracker.py log` (or `log --new` for a new store).
