@@ -35,3 +35,15 @@ timestamp,item_id,option_id,listing_id,retailer,price,in_stock,status,source,not
 2026-11-14T02:19:36,swim_goggles,kayenne,kayenne_walmart,Walmart,,,blocked,html,HTTP 412
 2026-11-14T02:19:36,swim_goggles,kayenne,kayenne_swim2000,Swim2000,22.40,false,ok,shopify,
 2026-11-14T02:19:36,swim_goggles,kayenne,kayenne_simplyswim,SimplySwim,46.00,true,ok,shopify,
+2026-11-15T00:33:57,neck_pillow,zyllion_zma13,zma13_amazon,Amazon,,,blocked,amazon,HTTP 503
+2026-11-15T00:33:57,neck_pillow,zyllion_zma13,zma13_zyllion,Zyllion.com,99.95,true,ok,shopify,
+2026-11-15T00:33:57,neck_pillow,zyllion_zma13rb,zma13rb_zyllion,Zyllion.com,79.95,true,ok,shopify,
+2026-11-15T00:33:57,neck_pillow,nekteck_neck,nekneck_nekteck,Nekteck.com,67.99,true,ok,shopify,
+2026-11-15T00:33:57,neck_pillow,nekteck_neck,nekneck_bestbuy,Best Buy,,,blocked,html,timed out (site likely blocks scripts)
+2026-11-15T00:33:57,foot_massager,renpho_d003r,d003r_renpho,RENPHO.com,109.99,true,ok,shopify,
+2026-11-15T00:33:57,foot_massager,renpho_solheel,solheel_renpho,RENPHO.com,114.99,true,ok,shopify,
+2026-11-15T00:33:57,knee_pair,nekteck_knee_pair,knee_nekteck,Nekteck.com,53.99,true,ok,shopify,
+2026-11-15T00:33:57,swim_goggles,kayenne,kayenne_amazon,Amazon,38.90,,ok,amazon-html,
+2026-11-15T00:33:57,swim_goggles,kayenne,kayenne_walmart,Walmart,,,blocked,html,HTTP 412
+2026-11-15T00:33:57,swim_goggles,kayenne,kayenne_swim2000,Swim2000,22.40,false,ok,shopify,
+2026-11-15T00:33:57,swim_goggles,kayenne,kayenne_simplyswim,SimplySwim,46.00,true,ok,shopify,

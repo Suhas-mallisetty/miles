@@ -173,7 +173,15 @@ def fetch_listing(lst: dict) -> dict:
                 page = http_get(lst["url"])
                 if re.search(r"captcha|api-services-support@amazon", page, re.I):
                     raise Blocked("Amazon CAPTCHA. Set KEEPA_API_KEY or use the CamelCamelCamel alert")
-                m = re.search(r'class="a-offscreen">\$([\d,]+\.\d\d)', page)
+                # Only trust the main buy-box price block, not sponsored/related items on the page
+                m = None
+                for anchor in ("corePriceDisplay_desktop_feature_div", "corePrice_feature_div",
+                               "apex_desktop", "priceblock_ourprice"):
+                    i = page.find(anchor)
+                    if i != -1:
+                        m = re.search(r'class="a-offscreen">\$([\d,]+\.\d\d)', page[i:i + 6000])
+                        if m:
+                            break
                 price, stock, src = (float(m.group(1).replace(",", "")) if m else None), None, "amazon-html"
         elif t == "html":
             price, stock = parse_price_from_html(http_get(lst["url"]))
