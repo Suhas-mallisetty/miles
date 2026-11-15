@@ -97,6 +97,11 @@ def http_get(url: str, accept: str = "text/html,application/json;q=0.9,*/*;q=0.8
         raise
 
 
+SIZE_WORDS = {"XXS", "XS", "S", "M", "L", "XL", "XXL", "2XL", "3XL", "SMALL", "MEDIUM", "LARGE",
+              "X-LARGE", "XX-LARGE"}
+SIZE_ALIASES = {"L": "LARGE", "M": "MEDIUM", "S": "SMALL", "XL": "X-LARGE"}
+
+
 def fetch_shopify(lst: dict) -> tuple[float | None, bool | None, str]:
     """Shopify stores (nekteck.com, renpho.com, zyllion.com...) expose /products/<handle>.js."""
     url = lst["url"].split("?")[0].rstrip("/") + ".js"
@@ -105,6 +110,15 @@ def fetch_shopify(lst: dict) -> tuple[float | None, bool | None, str]:
     want = lst.get("variant")
     if want:
         variants = [v for v in variants if want.lower() in (v.get("title") or "").lower()] or variants
+    size = lst.get("size")
+    if size:
+        # Every size-like option must equal the wanted size ("L", or "L / L" for top+bottom sets)
+        def fits(v):
+            opts = [o for o in (v.get("options") or []) if o and o.upper() in SIZE_WORDS]
+            return bool(opts) and all(o.upper() in (size.upper(), SIZE_ALIASES.get(size.upper(), "")) for o in opts)
+        variants = [v for v in variants if fits(v)]
+        if not variants:
+            raise ValueError(f"no size {size} variant")
     avail = [v for v in variants if v.get("available")]
     v = min(avail or variants, key=lambda v: v["price"])
     return v["price"] / 100.0, bool(v.get("available")), "shopify"
@@ -127,8 +141,6 @@ def fetch_keepa(asin: str) -> tuple[float | None, bool | None, str]:
 
 def parse_price_from_html(page: str) -> tuple[float | None, bool | None]:
     """Generic: schema.org JSON-LD offers, then common meta tags."""
-    if re.search(r"captcha|Robot or human|px-captcha|Access Denied", page, re.I):
-        raise Blocked("bot check page")
     for block in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', page, re.S | re.I):
         try:
             data = json.loads(html.unescape(block.strip()))
@@ -157,6 +169,10 @@ def parse_price_from_html(page: str) -> tuple[float | None, bool | None]:
         m = re.search(pat, page)
         if m:
             return float(m.group(1).replace(",", "")), None
+    # No price found. Was it a bot wall? (Only checked now: many normal pages load reCAPTCHA for forms.)
+    if re.search(r"Robot or human|px-captcha|Access Denied|Pardon Our Interruption|verify you are a human"
+                 r"|<title>[^<]*(captcha|Just a moment)", page, re.I):
+        raise Blocked("bot check page")
     return None, None
 
 
@@ -253,12 +269,22 @@ def build_state(products: dict, rows: list[dict]) -> dict:
             opts_out.append({**{k: opt[k] for k in ("id", "name", "image", "target_price", "power")},
                              "listings": lsts_out, "best": best,
                              "india_flag": india_flag(opt["power"])})
-        priced_opts = [o for o in opts_out if o["best"]]
-        pick = min(priced_opts, key=lambda o: o["best"]["current"]) if priced_opts else None
-        subtotal = round(pick["best"]["current"] * item["qty"], 2) if pick else 0.0
+        selected = [o for o, src in zip(opts_out, item["options"]) if src.get("selected")]
+        if selected:
+            # Buy several options (e.g. two board games): each selected option counts
+            picks = [o for o in selected if o["best"]]
+            subtotal = round(sum(o["best"]["current"] for o in picks) * item["qty"], 2)
+        else:
+            # Alternatives: only the cheapest priced option counts
+            priced_opts = [o for o in opts_out if o["best"]]
+            picks = [min(priced_opts, key=lambda o: o["best"]["current"])] if priced_opts else []
+            subtotal = round(picks[0]["best"]["current"] * item["qty"], 2) if picks else 0.0
         total += subtotal
         items_out.append({**{k: item[k] for k in ("id", "name", "recipient", "qty")},
-                          "options": opts_out, "pick": pick["id"] if pick else None,
+                          "size": item.get("size"), "category": item.get("category", "gift"),
+                          "mode": "selected" if selected else "cheapest",
+                          "options": opts_out, "picks": [o["id"] for o in picks],
+                          "pick": picks[0]["id"] if picks else None,
                           "subtotal": subtotal})
     return {"meta": meta, "items": items_out, "total": round(total, 2),
             "generated": now_iso()}
@@ -378,11 +404,12 @@ def print_report(state: dict) -> None:
     m = state["meta"]
     print(f"\n=== Gift tracker {state['generated']} | deliver by {m['deliver_by']} ===")
     for it in state["items"]:
-        print(f"\n{it['name']} ({it['recipient']})")
+        size = f", size {it['size']}" if it.get("size") else ""
+        print(f"\n{it['name']} ({it['recipient']}{size})  subtotal ${it['subtotal']:.2f}")
         for o in it["options"]:
             flag = o["india_flag"]
             icon = {"ok": "OK ", "warn": "!! ", "bad": "XX "}[flag["level"]]
-            star = "*" if o["id"] == it["pick"] else " "
+            star = "*" if o["id"] in it["picks"] else " "
             print(f" {star}{o['name']}  target ${o['target_price']:.0f}   [{icon}{flag['label']}]")
             for l in o["listings"]:
                 cur = f"${l['current']:.2f}" if l["current"] is not None else "   n/a"
@@ -398,7 +425,7 @@ def print_report(state: dict) -> None:
                         tags.append(f"alert: {l['camel']}")
                 print(f"     {l['retailer']:<12} now {cur:>8}  low {low:>8}  {' | '.join(tags)}")
     lo, hi = m["budget_min"], m["budget_max"]
-    print(f"\nRunning total (cheapest in-stock pick per item): ${state['total']:.2f}"
+    print(f"\nRunning total (* = counted: cheapest option, or every selected option): ${state['total']:.2f}"
           f"  (budget ${lo}-${hi})")
     print(f"Dashboard: {DASHBOARD}")
 

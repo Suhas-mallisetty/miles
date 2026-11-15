@@ -47,3 +47,59 @@ timestamp,item_id,option_id,listing_id,retailer,price,in_stock,status,source,not
 2026-11-15T00:33:57,swim_goggles,kayenne,kayenne_walmart,Walmart,,,blocked,html,HTTP 412
 2026-11-15T00:33:57,swim_goggles,kayenne,kayenne_swim2000,Swim2000,22.40,false,ok,shopify,
 2026-11-15T00:33:57,swim_goggles,kayenne,kayenne_simplyswim,SimplySwim,46.00,true,ok,shopify,
+2026-11-15T00:00:00,board_games,rummikub,rummikub_walmart,Walmart,13.99,,seed,web search snapshot,starting price recorded when products.json was built
+2026-11-15T00:00:00,board_games,sequence,sequence_target,Target,19.99,,seed,web search snapshot (with bonus Sequence Stacks),starting price recorded when products.json was built
+2026-11-15T00:00:00,sweater,llbean_cotton_cashmere,llbean_cc_site,L.L.Bean,54.99,,seed,web search snapshot (sale from $79.95),starting price recorded when products.json was built
+2026-11-15T00:00:00,sweater,llbean_ragg,llbean_ragg_site,L.L.Bean,89.95,,seed,web search snapshot,starting price recorded when products.json was built
+2026-11-15T00:43:44,neck_pillow,zyllion_zma13,zma13_amazon,Amazon,,,blocked,amazon,HTTP 503
+2026-11-15T00:43:44,neck_pillow,zyllion_zma13,zma13_zyllion,Zyllion.com,99.95,true,ok,shopify,
+2026-11-15T00:43:44,neck_pillow,zyllion_zma13rb,zma13rb_zyllion,Zyllion.com,79.95,true,ok,shopify,
+2026-11-15T00:43:44,neck_pillow,nekteck_neck,nekneck_nekteck,Nekteck.com,67.99,true,ok,shopify,
+2026-11-15T00:43:44,neck_pillow,nekteck_neck,nekneck_bestbuy,Best Buy,,,blocked,html,timed out (site likely blocks scripts)
+2026-11-15T00:43:44,foot_massager,renpho_d003r,d003r_renpho,RENPHO.com,109.99,true,ok,shopify,
+2026-11-15T00:43:44,foot_massager,renpho_solheel,solheel_renpho,RENPHO.com,114.99,true,ok,shopify,
+2026-11-15T00:43:44,knee_pair,nekteck_knee_pair,knee_nekteck,Nekteck.com,53.99,true,ok,shopify,
+2026-11-15T00:43:44,swim_goggles,kayenne,kayenne_amazon,Amazon,,,blocked,amazon,HTTP 503
+2026-11-15T00:43:44,swim_goggles,kayenne,kayenne_walmart,Walmart,,,blocked,html,HTTP 412
+2026-11-15T00:43:44,swim_goggles,kayenne,kayenne_swim2000,Swim2000,22.40,false,ok,shopify,
+2026-11-15T00:43:44,swim_goggles,kayenne,kayenne_simplyswim,SimplySwim,46.00,true,ok,shopify,
+2026-11-15T00:43:44,board_games,ticket_to_ride,ttr_gamenerdz,GameNerdz,39.99,true,ok,html,
+2026-11-15T00:43:44,board_games,ticket_to_ride,ttr_minimarket,Miniature Market,47.99,,ok,html,
+2026-11-15T00:43:44,board_games,rummikub,rummikub_walmart,Walmart,,,blocked,html,HTTP 412
+2026-11-15T00:43:44,board_games,catan,catan_gamenerdz,GameNerdz,39.99,true,ok,html,
+2026-11-15T00:43:44,board_games,azul,azul_gamenerdz,GameNerdz,31.99,true,ok,html,
+2026-11-15T00:43:44,board_games,azul,azul_minimarket,Miniature Market,31.99,,ok,html,
+2026-11-15T00:43:44,board_games,codenames,codenames_minimarket,Miniature Market,24.99,,ok,html,
+2026-11-15T00:43:44,sweater,tc_sweater_2pk,tc_sweater_2pk_site,True Classic,109.99,true,ok,shopify,
+2026-11-15T00:43:44,sweatshirt,champion_powerblend_crew,ch_pb_crew_site,Champion,27.00,true,ok,shopify,
+2026-11-15T00:43:44,sweatshirt,champion_polar_qz,ch_polar_qz_site,Champion,36.00,true,ok,shopify,
+2026-11-15T00:43:44,sweatshirt,champion_reverse_weave,ch_rw_site,Champion,,,error,shopify,HTTPError: HTTP Error 404: Not Found
+2026-11-15T00:43:44,joggers,champion_powerblend_jogger,ch_pb_jog_site,Champion,27.00,true,ok,shopify,
+2026-11-15T00:43:44,joggers,tc_active_jogger_2pk,tc_jog_2pk_site,True Classic,79.99,true,ok,shopify,
+2026-11-15T00:43:44,joggers,tc_qz_jogger_set,tc_set_site,True Classic,99.99,true,ok,shopify,
+2026-11-15T00:44:38,neck_pillow,zyllion_zma13,zma13_amazon,Amazon,99.95,,ok,amazon-html,
+2026-11-15T00:44:38,neck_pillow,zyllion_zma13,zma13_zyllion,Zyllion.com,99.95,true,ok,shopify,
+2026-11-15T00:44:38,neck_pillow,zyllion_zma13rb,zma13rb_zyllion,Zyllion.com,79.95,true,ok,shopify,
+2026-11-15T00:44:38,neck_pillow,nekteck_neck,nekneck_nekteck,Nekteck.com,67.99,true,ok,shopify,
+2026-11-15T00:44:38,neck_pillow,nekteck_neck,nekneck_bestbuy,Best Buy,,,blocked,html,timed out (site likely blocks scripts)
+2026-11-15T00:44:38,foot_massager,renpho_d003r,d003r_renpho,RENPHO.com,109.99,true,ok,shopify,
+2026-11-15T00:44:38,foot_massager,renpho_solheel,solheel_renpho,RENPHO.com,114.99,true,ok,shopify,
+2026-11-15T00:44:38,knee_pair,nekteck_knee_pair,knee_nekteck,Nekteck.com,53.99,true,ok,shopify,
+2026-11-15T00:44:38,swim_goggles,kayenne,kayenne_amazon,Amazon,,,blocked,amazon,HTTP 503
+2026-11-15T00:44:38,swim_goggles,kayenne,kayenne_walmart,Walmart,,,blocked,html,HTTP 412
+2026-11-15T00:44:38,swim_goggles,kayenne,kayenne_swim2000,Swim2000,22.40,false,ok,shopify,
+2026-11-15T00:44:38,swim_goggles,kayenne,kayenne_simplyswim,SimplySwim,46.00,true,ok,shopify,
+2026-11-15T00:44:38,board_games,ticket_to_ride,ttr_gamenerdz,GameNerdz,39.99,true,ok,html,
+2026-11-15T00:44:38,board_games,ticket_to_ride,ttr_minimarket,Miniature Market,47.99,,ok,html,
+2026-11-15T00:44:38,board_games,rummikub,rummikub_walmart,Walmart,,,blocked,html,HTTP 412
+2026-11-15T00:44:38,board_games,catan,catan_gamenerdz,GameNerdz,39.99,true,ok,html,
+2026-11-15T00:44:38,board_games,azul,azul_gamenerdz,GameNerdz,31.99,true,ok,html,
+2026-11-15T00:44:38,board_games,azul,azul_minimarket,Miniature Market,31.99,,ok,html,
+2026-11-15T00:44:38,board_games,codenames,codenames_minimarket,Miniature Market,24.99,,ok,html,
+2026-11-15T00:44:38,sweater,tc_sweater_2pk,tc_sweater_2pk_site,True Classic,109.99,true,ok,shopify,
+2026-11-15T00:44:38,sweatshirt,champion_powerblend_crew,ch_pb_crew_site,Champion,27.00,true,ok,shopify,
+2026-11-15T00:44:38,sweatshirt,champion_polar_qz,ch_polar_qz_site,Champion,36.00,true,ok,shopify,
+2026-11-15T00:44:38,sweatshirt,champion_reverse_weave,ch_rw_site,Champion,60.00,true,ok,shopify,
+2026-11-15T00:44:38,joggers,champion_powerblend_jogger,ch_pb_jog_site,Champion,27.00,true,ok,shopify,
+2026-11-15T00:44:38,joggers,tc_active_jogger_2pk,tc_jog_2pk_site,True Classic,79.99,true,ok,shopify,
+2026-11-15T00:44:38,joggers,tc_qz_jogger_set,tc_set_site,True Classic,99.99,true,ok,shopify,

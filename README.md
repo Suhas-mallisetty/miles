@@ -83,3 +83,9 @@ Once you've confirmed a rating, set `"verified": true` (and `"usb_c": true` wher
 ## New Hampshire trip
 **NH has no sales tax.** The dashboard has a store list (Best Buy, Target/Walmart, TJ Maxx/Marshalls/HomeGoods, Kohl's, Costco Nashua, Dick's for goggles, Merrimack/Tilton/North Conway/Kittery outlets). Log what you find with `tracker.py log --new …` so it's compared with the online prices.
 Goggles are the item worth buying in a store, because he can try them on. Comfort picks: Aqua Sphere Kayenne; TYR Special Ops 2.0 (**non-polarized**); Speedo Hydro Comfort; Aqua Sphere Seal 3 (mask-style).
+
+## Board games and clothes (added Nov 15)
+- **Board games** use `"selected": true` on each game you plan to buy. Every selected game counts in the total. Ticket to Ride and Rummikub are selected by default; Catan, Azul, Codenames and Sequence are tracked but not counted. Flip the flags in `products.json` to change that.
+- **Clothes, size L (men's)**: sweater, sweatshirt and joggers each count their cheapest option. Champion and True Classic listings check **only the size-L variant**, including whether L is in stock (the `"size": "L"` field on the listing). True Classic's quarter-zip and jogger set requires L/L.
+- Live prices come from Champion, True Classic, GameNerdz and Miniature Market. L.L.Bean, Quince, Uniqlo, Target, Walmart and Amazon block the tracker or load prices in the browser, so they are link-only or Nov 15 snapshots. Log what you see with `tracker.py log`.
+- To track women's L, add an item (copy `sweatshirt`) with the women's product links and `"size": "L"`.

@@ -381,6 +381,585 @@
           ]
         }
       ]
+    },
+    {
+      "id": "board_games",
+      "name": "Board games",
+      "recipient": "Family",
+      "category": "games",
+      "qty": 1,
+      "note": "Options marked selected=true are all counted in the total. Change which games are selected in products.json.",
+      "options": [
+        {
+          "id": "ticket_to_ride",
+          "name": "Ticket to Ride (2\u20135 players, easiest to learn)",
+          "selected": true,
+          "image": "https://cdn11.bigcommerce.com/s-ua4dd/products/303942/images/411858/DOW7201N-1__34106.1750191570.380.500.png?c=2",
+          "target_price": 30.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "ttr_gamenerdz",
+              "retailer": "GameNerdz",
+              "type": "html",
+              "url": "https://www.gamenerdz.com/ticket-to-ride-refresh"
+            },
+            {
+              "id": "ttr_minimarket",
+              "retailer": "Miniature Market",
+              "type": "html",
+              "url": "https://www.miniaturemarket.com/dow7201.html"
+            },
+            {
+              "id": "ttr_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Ticket+to+Ride+board+game"
+            },
+            {
+              "id": "ttr_target",
+              "retailer": "Target",
+              "type": "search",
+              "url": "https://www.target.com/s?searchTerm=ticket+to+ride"
+            }
+          ]
+        },
+        {
+          "id": "rummikub",
+          "name": "Rummikub Classic (rummy with tiles, 2\u20134 players)",
+          "selected": true,
+          "image": null,
+          "target_price": 13.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "rummikub_walmart",
+              "retailer": "Walmart",
+              "type": "html",
+              "url": "https://www.walmart.com/ip/882604",
+              "seed": {
+                "price": 13.99,
+                "date": "2026-11-15T00:00:00",
+                "source": "web search snapshot"
+              }
+            },
+            {
+              "id": "rummikub_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Rummikub+Pressman+classic"
+            },
+            {
+              "id": "rummikub_target",
+              "retailer": "Target",
+              "type": "search",
+              "url": "https://www.target.com/s?searchTerm=rummikub"
+            }
+          ]
+        },
+        {
+          "id": "catan",
+          "name": "Catan (3\u20134 players, trading strategy)",
+          "image": "https://cdn11.bigcommerce.com/s-ua4dd/products/266355/images/352995/CN3081-1__35633.1742318009.380.500.png?c=2",
+          "target_price": 30.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "catan_gamenerdz",
+              "retailer": "GameNerdz",
+              "type": "html",
+              "url": "https://www.gamenerdz.com/catan-6th-edition"
+            },
+            {
+              "id": "catan_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Catan+board+game"
+            },
+            {
+              "id": "catan_target",
+              "retailer": "Target",
+              "type": "search",
+              "url": "https://www.target.com/s?searchTerm=catan"
+            }
+          ]
+        },
+        {
+          "id": "azul",
+          "name": "Azul (2\u20134 players, calm tile-laying)",
+          "image": "https://www.miniaturemarket.com/media/72/2c/a0/1752271321/pbg40020.jpg?ts=1752271321",
+          "target_price": 22.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "azul_gamenerdz",
+              "retailer": "GameNerdz",
+              "type": "html",
+              "url": "https://www.gamenerdz.com/azul"
+            },
+            {
+              "id": "azul_minimarket",
+              "retailer": "Miniature Market",
+              "type": "html",
+              "url": "https://www.miniaturemarket.com/pbg40020.html"
+            },
+            {
+              "id": "azul_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Azul+board+game"
+            }
+          ]
+        },
+        {
+          "id": "codenames",
+          "name": "Codenames 2nd ed. (party word game, 4+ players)",
+          "image": "https://www.miniaturemarket.com/media/2e/fa/81/1755847743/cge00125.jpg?ts=1755847743",
+          "target_price": 18.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "codenames_minimarket",
+              "retailer": "Miniature Market",
+              "type": "html",
+              "url": "https://www.miniaturemarket.com/codenames-second-edition-cge00125.html"
+            },
+            {
+              "id": "codenames_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Codenames+board+game"
+            },
+            {
+              "id": "codenames_target",
+              "retailer": "Target",
+              "type": "search",
+              "url": "https://www.target.com/s?searchTerm=codenames"
+            }
+          ]
+        },
+        {
+          "id": "sequence",
+          "name": "Sequence (cards + board, 2\u201312 players)",
+          "image": null,
+          "target_price": 15.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "sequence_target",
+              "retailer": "Target",
+              "type": "search",
+              "url": "https://www.target.com/s?searchTerm=sequence+board+game",
+              "seed": {
+                "price": 19.99,
+                "date": "2026-11-15T00:00:00",
+                "source": "web search snapshot (with bonus Sequence Stacks)"
+              }
+            },
+            {
+              "id": "sequence_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Sequence+board+game+Goliath"
+            },
+            {
+              "id": "sequence_walmart",
+              "retailer": "Walmart",
+              "type": "search",
+              "url": "https://www.walmart.com/search?q=sequence+board+game"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweater",
+      "name": "Sweater",
+      "recipient": "Family",
+      "category": "clothes",
+      "size": "L (men's)",
+      "qty": 1,
+      "options": [
+        {
+          "id": "tc_sweater_2pk",
+          "name": "True Classic Dressy Crew Neck Sweater 2-Pack",
+          "image": "https://cdn.shopify.com/s/files/1/0220/4008/4552/files/Dressy-Crew-Neck-Sweater-2-Pack.jpg?v=1792386007",
+          "target_price": 90.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "tc_sweater_2pk_site",
+              "retailer": "True Classic",
+              "type": "shopify",
+              "size": "L",
+              "url": "https://www.trueclassictees.com/products/truffle-fiord-crew-neck-sweater-2-pack"
+            }
+          ]
+        },
+        {
+          "id": "llbean_cotton_cashmere",
+          "name": "L.L.Bean Wicked Soft Cotton/Cashmere Crewneck",
+          "image": null,
+          "target_price": 50.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "llbean_cc_site",
+              "retailer": "L.L.Bean",
+              "type": "search",
+              "url": "https://www.llbean.com/llb/shop/126715",
+              "seed": {
+                "price": 54.99,
+                "date": "2026-11-15T00:00:00",
+                "source": "web search snapshot (sale from $79.95)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "llbean_ragg",
+          "name": "L.L.Bean Classic Ragg Wool Crewneck (100% lambswool)",
+          "image": null,
+          "target_price": 65.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "llbean_ragg_site",
+              "retailer": "L.L.Bean",
+              "type": "search",
+              "url": "https://www.llbean.com/llb/shop/123770",
+              "seed": {
+                "price": 89.95,
+                "date": "2026-11-15T00:00:00",
+                "source": "web search snapshot"
+              }
+            }
+          ]
+        },
+        {
+          "id": "budget_sweater",
+          "name": "Budget picks: Target Goodfellow / Uniqlo merino / Quince cashmere",
+          "image": null,
+          "target_price": 30.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "target_goodfellow",
+              "retailer": "Target",
+              "type": "search",
+              "url": "https://www.target.com/s?searchTerm=goodfellow+men%27s+sweater"
+            },
+            {
+              "id": "uniqlo_merino",
+              "retailer": "Uniqlo",
+              "type": "search",
+              "url": "https://www.uniqlo.com/us/en/search?q=extra%20fine%20merino%20crew%20neck%20sweater%20men"
+            },
+            {
+              "id": "quince_cashmere",
+              "retailer": "Quince",
+              "type": "search",
+              "url": "https://www.quince.com/men/sweaters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweatshirt",
+      "name": "Sweatshirt",
+      "recipient": "Family",
+      "category": "clothes",
+      "size": "L (men's)",
+      "qty": 1,
+      "options": [
+        {
+          "id": "champion_powerblend_crew",
+          "name": "Champion Powerblend Crewneck Sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0665/9001/5680/files/CPM253FC10_SK50_Front_2048X2048_999d5142-2efa-46c7-bac4-103e2aa6b22b.jpg?v=1783675074",
+          "target_price": 22.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "ch_pb_crew_site",
+              "retailer": "Champion",
+              "type": "shopify",
+              "size": "L",
+              "url": "https://www.champion.com/products/champion-powerblend-crewneck-sweatshirt-c-logo-riviera"
+            },
+            {
+              "id": "ch_pb_crew_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Champion+Powerblend+crewneck+sweatshirt+men"
+            }
+          ]
+        },
+        {
+          "id": "champion_polar_qz",
+          "name": "Champion Polar Fleece Quarter Zip",
+          "image": "https://cdn.shopify.com/s/files/1/0665/9001/5680/files/JPG_20admin_20only-CPM264FJ01_RG36_FRONT_2048x2048_b3a16b40-6813-4ef6-b06e-c8d8cd4b4cab.jpg?v=1793175240",
+          "target_price": 30.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "ch_polar_qz_site",
+              "retailer": "Champion",
+              "type": "shopify",
+              "size": "L",
+              "url": "https://www.champion.com/products/champion-polar-fleece-quarter-zip-granite-heather"
+            }
+          ]
+        },
+        {
+          "id": "champion_reverse_weave",
+          "name": "Champion Reverse Weave Crewneck (heavyweight)",
+          "image": "https://cdn.shopify.com/s/files/1/0665/9001/5680/files/CPM253FC13_R340_Front_2048x2048_cafcae1c-3d8f-4c6e-bc03-e710c6642f42.jpg?v=1780386382",
+          "target_price": 40.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "ch_rw_site",
+              "retailer": "Champion",
+              "type": "shopify",
+              "size": "L",
+              "url": "https://www.champion.com/products/champion-reverse-weave-crewneck-sweatshirt-c-logo-platinum-silver-heather"
+            },
+            {
+              "id": "ch_rw_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Champion+Reverse+Weave+crewneck+men"
+            }
+          ]
+        },
+        {
+          "id": "hanes_ultimate",
+          "name": "Hanes Ultimate Heavyweight Fleece Crewneck (cheapest)",
+          "image": null,
+          "target_price": 15.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "hanes_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Hanes+Ultimate+heavyweight+fleece+crewneck+men"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joggers",
+      "name": "Joggers",
+      "recipient": "Family",
+      "category": "clothes",
+      "size": "L (men's)",
+      "qty": 1,
+      "options": [
+        {
+          "id": "champion_powerblend_jogger",
+          "name": "Champion Powerblend Joggers",
+          "image": "https://cdn.shopify.com/s/files/1/0665/9001/5680/files/CPM253PA15_S614_Front_2048X2048_c4c80f45-0bf1-454a-8953-8eb5f9dd8efa.jpg?v=1783674036",
+          "target_price": 22.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "ch_pb_jog_site",
+              "retailer": "Champion",
+              "type": "shopify",
+              "size": "L",
+              "url": "https://www.champion.com/products/champion-powerblend-joggers-c-logo-estate-blue"
+            },
+            {
+              "id": "ch_pb_jog_amazon",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Champion+Powerblend+joggers+men"
+            }
+          ]
+        },
+        {
+          "id": "tc_active_jogger_2pk",
+          "name": "True Classic Active Joggers 2-Pack",
+          "image": "https://cdn.shopify.com/s/files/1/0220/4008/4552/files/CoreActiveJogger2-Pack_2c15894c-ef2a-418f-a3a5-03f4ff66e01f.jpg?v=1762280630",
+          "target_price": 65.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "tc_jog_2pk_site",
+              "retailer": "True Classic",
+              "type": "shopify",
+              "size": "L",
+              "url": "https://www.trueclassictees.com/products/black-charcoal-active-jogger-2-pack"
+            }
+          ]
+        },
+        {
+          "id": "tc_qz_jogger_set",
+          "name": "True Classic Quarter-Zip Fleece + Jogger set (L/L)",
+          "image": "https://cdn.shopify.com/s/files/1/0220/4008/4552/files/Black-Half-Zip-Fleece-Sweatshirt-_-Jogger-2-Pack.jpg?v=1762286469",
+          "target_price": 80.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "tc_set_site",
+              "retailer": "True Classic",
+              "type": "shopify",
+              "size": "L",
+              "url": "https://www.trueclassictees.com/products/black-half-zip-fleece-sweatshirt-jogger-2-pack"
+            }
+          ]
+        },
+        {
+          "id": "other_joggers",
+          "name": "Amazon Essentials / Under Armour Rival Fleece",
+          "image": null,
+          "target_price": 25.0,
+          "power": {
+            "plugs_into_wall": false,
+            "rechargeable": false,
+            "usb_c": false,
+            "adapter_input": "n/a",
+            "verified": true,
+            "note": "No power needed."
+          },
+          "listings": [
+            {
+              "id": "amz_ess_jogger",
+              "retailer": "Amazon",
+              "type": "search",
+              "url": "https://www.amazon.com/s?k=Amazon+Essentials+men%27s+fleece+jogger"
+            },
+            {
+              "id": "ua_rival_jogger",
+              "retailer": "Under Armour",
+              "type": "search",
+              "url": "https://www.underarmour.com/en-us/search?q=rival+fleece+joggers+men"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

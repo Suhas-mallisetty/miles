@@ -116,6 +116,28 @@
         </ul>
       </div>
     </div>
+    <div class="grid2" style="margin-top:12px">
+      <div>
+        <b>Clothes, size L (outlets are best for this)</b>
+        <ul>
+          <li><b>Merrimack Premium Outlets</b> (Everett Tpk exit 10): Nike, Gap Factory, Old Navy, Banana Republic, Columbia, adidas factory stores. Sweatshirts, joggers and sweaters, all tax-free.</li>
+          <li><b>Settlers Green, North Conway</b>: J.Crew Factory, Nike, Columbia, Lululemon (new in 2026). Good for sweaters.</li>
+          <li><b>Kittery, ME outlets</b> (by Portsmouth): a long strip of factory stores. Maine charges 5.5% sales tax.</li>
+          <li><b>Kohl's / Target / TJ Maxx / Marshalls</b>: Champion, Hanes and Goodfellow fleece, often under $25 during Black Friday week.</li>
+          <li>Compare in-store prices with the dashboard: Champion Powerblend crew and joggers are <b>$27 online</b> right now.</li>
+        </ul>
+      </div>
+      <div>
+        <b>Board games</b>
+        <ul>
+          <li><b>The Relentless Dragon</b>, 483 Amherst St, Nashua</li>
+          <li><b>Myriad Games</b>, South Willow St, Manchester (also in Salem)</li>
+          <li><b>Diversions Puzzles &amp; Games</b>, 123 Congress St, Portsmouth</li>
+          <li><b>Target / Walmart / Barnes &amp; Noble</b> are usually cheapest for Rummikub, Sequence and Codenames. Check their Black Friday prices.</li>
+          <li><b>Luggage tip:</b> Ticket to Ride and Catan come in large boxes. Remove the plastic insert and pack the pieces in zip bags to save space.</li>
+        </ul>
+      </div>
+    </div>
     <p style="margin-bottom:0;color:var(--muted);font-size:13px">Store stock changes daily. Call or check each store's app before driving.</p>
   </div>
 
@@ -154,14 +176,15 @@ const status = S.total > hi ? `<span class="badge b-bad">over budget</span>` :
                `<span class="badge b-mute">under $${lo}: room for extras</span>`;
 $("#total").innerHTML = `
   <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
-    <div><div class="recipient">Running total (cheapest in-stock pick for each item)</div>
+    <div><div class="recipient">Running total (cheapest option per item, or every selected game)</div>
     <div class="big">${money(S.total)}</div></div>${status}</div>
   <div class="meter"><div class="band" style="left:${pct(lo)}%;width:${pct(hi)-pct(lo)}%"></div>
     <div class="fill" style="width:${pct(S.total)}%"></div></div>
   <div class="recipient">Budget $${lo}–$${hi} (shaded)</div>
   <div class="lines">${S.items.map(it => {
-    const o = it.options.find(o => o.id === it.pick);
-    return `<span>${esc(it.name)}${o ? ` <span class="recipient">· ${esc(o.name)} @ ${esc(o.best.retailer)}</span>` : ""}</span><span>${money(it.subtotal)}</span>`;
+    const os = it.options.filter(o => it.picks.includes(o.id));
+    const what = os.map(o => `${esc(o.name)} @ ${esc(o.best.retailer)}`).join(" + ");
+    return `<span>${esc(it.name)}${what ? ` <span class="recipient">· ${what}</span>` : ""}</span><span>${money(it.subtotal)}</span>`;
   }).join("")}</div>`;
 
 // ---------- sparkline with the BF→CM band
@@ -186,6 +209,7 @@ const flagBadge = (f) => `<span class="badge b-${f.level}">${f.level === "ok" ? 
 const statusCell = (l) => {
   if (l.last_status === "blocked") return `<span class="badge b-warn" title="${esc(l.last_note)}">blocked</span>${l.camel ? ` <a href="${l.camel}" target="_blank" rel="noopener">set alert</a>` : ""}`;
   if (l.last_status === "error") return `<span class="badge b-warn" title="${esc(l.last_note)}">error</span>`;
+  if (l.last_status === "no_price") return `<span class="badge b-mute">check manually</span>`;
   if (l.last_status === "seed") return `<span class="badge b-mute">snapshot</span>`;
   if (l.last_status === "manual" || l.type === "search" || l.type === "manual") return `<span class="badge b-mute">${l.current == null ? "check manually" : "logged by you"}</span>`;
   if (l.in_stock === "false") return `<span class="badge b-bad">out of stock</span>`;
@@ -193,12 +217,12 @@ const statusCell = (l) => {
 };
 $("#items").innerHTML = S.items.map(it => `
   <section class="item">
-    <div class="item-head"><h3>${esc(it.name)}</h3><span class="recipient">for ${esc(it.recipient)} · qty ${it.qty}</span></div>
+    <div class="item-head"><h3>${esc(it.name)}</h3><span class="recipient">for ${esc(it.recipient)}${it.size ? ` · size ${esc(it.size)}` : ""} · qty ${it.qty} · ${it.mode === "selected" ? "all selected options count" : "cheapest option counts"} · <b>${money(it.subtotal)}</b></span></div>
     ${it.options.map(o => `
       <div class="opt">
         ${o.image ? `<img src="${esc(o.image)}" alt="${esc(o.name)}" loading="lazy" onerror="this.outerHTML='<div class=ph>no photo</div>'">` : `<div class="ph">photo at retailer link</div>`}
         <div>
-          <div class="opt-title">${esc(o.name)} ${o.id === it.pick ? `<span class="pick">cheapest pick</span>` : ""}
+          <div class="opt-title">${esc(o.name)} ${it.picks.includes(o.id) ? `<span class="pick">${it.mode === "selected" ? "selected" : "cheapest pick"}</span>` : ""}
             ${o.listings.some(l => l.deal) ? `<span class="badge b-deal">DEAL</span>` : ""}
             ${o.listings.some(l => l.window_drop) ? `<span class="badge b-bf">BF/CM DROP</span>` : ""}</div>
           <div class="meta-row">Target ${money(o.target_price)} · ${flagBadge(o.india_flag)}</div>
@@ -220,7 +244,7 @@ $("#items").innerHTML = S.items.map(it => `
   </section>`).join("");
 
 // ---------- power summary
-const allOpts = S.items.flatMap(it => it.options.map(o => ({...o, item: it.name})));
+const allOpts = S.items.flatMap(it => it.options.map(o => ({...o, item: it.name}))).filter(o => o.power.plugs_into_wall || o.power.rechargeable);
 $("#power").innerHTML = `
   <p style="margin-top:0">India runs on 230V at 50Hz. Anything that plugs into the wall needs its adapter labelled <b>INPUT 100-240V ~ 50/60Hz</b>.
   With that label you only need a cheap Type C/D plug adapter. Without it, a 120V-only adapter can burn out. USB-C rechargeable items are safest because any phone charger works.</p>
