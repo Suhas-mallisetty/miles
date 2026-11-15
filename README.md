@@ -11,6 +11,13 @@ The trip is on **Dec 4**, so everything must be **delivered by Dec 2**. Budget i
 | `dashboard_template.html` | Layout for the dashboard |
 | `run_daily.sh` | Wrapper for cron or launchd |
 
+## Terminal dashboard
+```bash
+python3 dashboard.py            # dashboard in the terminal (colors, deals, totals, India flags)
+python3 dashboard.py --check    # fetch fresh prices first
+python3 dashboard.py --all      # include stores with no price yet
+```
+
 ## Quick start
 
 ```bash
