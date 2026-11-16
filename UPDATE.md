@@ -1,17 +1,16 @@
 # House/Tech House Tracker: India, Dec 3–30, 2026
 
-**Last run:** 2026-11-09 · **Booked:** Fred again.. Mumbai, Dec 8–9
+**Last run:** 2026-11-16 · **Booked:** Fred again.. Mumbai, Dec 8–9
 
 ## 🆕 NEW since last run
 
-No new events in India or near-India that fit your taste. I checked and skipped Tomorrowland Thailand (Pattaya, Dec 11–13), which is big-room and sold out, and HOME Festival Goa (Dec 29–30), which is Bollywood/Punjabi.
+No new events this week.
 
 ## 🔄 CHANGED
 
-- **Circus Bengaluru (District Arena @ Terraform):** Mochakk plays **Dec 18** (per RA) and HUGEL **Dec 19** (per Wild City). The lineup adds I Hate Models (hard techno, skip that set), Yousef and LI|LU. Score 3 → 4.
-- **Circus Hyderabad:** it's a citywide, multi-venue event over three weekends, Dec 12–27. HUGEL plays Dec 18. Venues are still TBA.
-- **HUGEL's Mumbai, Kolkata and Delhi dates** are billed as his "MAKE THE GIRLS DANCE" editions.
-- **Sunburn Closing Party venue is still disputed.** Newer coverage says MMRDA Grounds; some Sunburn coverage still says NSCI Dome. Check BookMyShow before you buy.
+- **Sole DXB lineup is out:** Overmono, Lola Young, Rema and Nia Archives. None of your artists, so I dropped it from the watchlist.
+- **Sunburn Closing Party venue is still disputed.** HUGEL + Mochakk coverage says MMRDA Grounds; general Sunburn coverage says NSCI Dome. Check BookMyShow before you buy.
+- **Circus Hyderabad:** venues still not announced.
 
 ## 📅 Full list (by date)
 
@@ -43,7 +42,6 @@ No new events in India or near-India that fit your taste. I checked and skipped 
 
 - **Circus Hyderabad:** venues and full lineup still to come.
 - **Francis Mercier:** promoter venues are still unpublished.
-- **Sole DXB, Dubai, Dec 11–13:** no official lineup. Platinumlist lists Overmono, Rema and others, but those are unverified.
 - **Serendisco, Colombo, Dec 19, from 4 PM:** still no lineup.
 - **EDC Thailand set times:** expected around Dec 12.
 
@@ -53,6 +51,7 @@ No new events in India or near-India that fit your taste. I checked and skipped 
 - **Chris Lake:** Washington DC, Dec 26.
 - **Solomun:** Miami, Dec 4.
 - **John Summit:** US and Australia.
+- **Elsewhere in December:** Black Coffee, Prospa, Cloonee and Sonny Fodera are in Miami for Art Basel week; Chris Stussy is in Manchester.
 - **Adam Port:** India tour Nov 13–15, before your window.
 - **No India dates found:** Cloonee, Prospa, Chris Stussy, Michael Bibi, Sonny Fodera.
 
